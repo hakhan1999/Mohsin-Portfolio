@@ -35,9 +35,9 @@ body {
   --color-dark: #1a1a1a;
   --color-grey: #4d4d4d;
   --color-border: #e1dbd1;
-  --color-gray:#333333;
-  --color-primary-hover:#4a0bc5;
-  --color-light-grey:#808080;
+  --color-gray: #333333;
+  --color-primary-hover: #4a0bc5;
+  --color-light-grey: #808080;
 
   /* Theme Breakpoints  */
   --breakpoint-xs: 390px;
@@ -55,5 +55,23 @@ body {
     padding-right: 5rem;
     width: 100%;
     max-width: 100%;
+  }
+
+  .container-left {
+    padding-left: 5rem;
+  }
+
+  .transition {
+    transition: all 0.4s ease-out;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
   }
 }

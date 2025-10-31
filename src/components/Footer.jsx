@@ -66,15 +66,15 @@ const contactLinks = [
 const Footer = () => {
   return (
     <footer className="footer container border-t border-t-border">
-      <div className="top flex items-center justify-between pt-10 pb-5">
+      <div className="top flex justify-between pt-10 pb-5">
         <NavLink className="text-primary text-lg font-semibold" to="/">
           Jeffery Cannon.
         </NavLink>
-        <ul className="flex items-center gap-5">
+        <ul className="flex gap-5">
           {navItems.map((item) => (
             <li key={item.id}>
               <NavLink
-                className="text-sm text-gray transition-all duration-400 ease-out font-medium hover:font-semibold "
+                className="text-sm text-gray transition font-medium hover:font-semibold "
                 to={item.path}
               >
                 {item.name}
@@ -82,10 +82,10 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div className="social flex items-center gap-3.5">
+        <div className="social flex gap-3.5">
           {socialLinks.map((item) => (
             <NavLink
-              className="p-2.5 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition-all duration-400 ease-out hover:bg-primary-hover"
+              className="p-2.5 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition hover:bg-primary-hover"
               to={item.path}
               key={item.id}
             >
@@ -95,12 +95,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="middle flex justify-center">
-        <div className="contactLinksWrapper flex items-center justify-center gap-12 py-[1.375rem] px-7 border border-border rounded-lg">
+        <div className="contactLinksWrapper flex justify-center gap-12 py-5.5 px-7 border border-border rounded-lg">
           {contactLinks.map((item, index) => (
             <NavLink
               key={item.id}
               to={item.link}
-              className={`flex items-center gap-[0.478rem] relative ${
+              className={`flex gap-[0.478rem] relative ${
                 index !== 0
                   ? "before:content-[''] before:absolute before:-left-6 before:top-1/2 before:-translate-y-1/2 before:w-px before:h-4 before:bg-border"
                   : ""

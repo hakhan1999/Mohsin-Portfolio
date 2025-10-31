@@ -31,20 +31,20 @@ const navItems = [
 
 const Header = () => {
   return (
-    <header className="container flex items-center justify-between py-8 border-b border-b-border ">
+    <header className="container flex justify-between py-8 border-b border-b-border ">
       <div className="logo">
-        <NavLink className="text-primary text-lg font-semibold" to="/">
+        <NavLink className="text-primary text-xl font-semibold" to="/">
           Jeffery Cannon.
         </NavLink>
       </div>
       <nav className="nav">
-        <ul className="flex items-center gap-5">
+        <ul className="flex gap-5">
           {navItems.map((item) => {
             if (item.id === 5) {
               return (
                 <li key={item.id}>
                   <NavLink
-                    className="flex items-center gap-[0.578rem] bg-primary rounded-md transition-all duration-400 ease-out hover:bg-primary-hover text-white px-4 py-3.5"
+                    className="flex gap-[0.578rem] bg-primary rounded-md transition hover:bg-primary-hover text-white px-4 py-3.5"
                     to={item.path}
                   >
                     <img src={item.icon} alt="Phone Icon" />
@@ -57,7 +57,7 @@ const Header = () => {
               <li key={item.id}>
                 <NavLink
                   className={({ isActive }) =>
-                    `text-sm text-gray transition-all duration-400 ease-out font-medium hover:font-semibold  ${
+                    `text-sm text-gray transition font-medium hover:font-semibold  ${
                       isActive
                         ? "px-5.5 bg-white py-3 rounded-md font-semibold"
                         : ""
