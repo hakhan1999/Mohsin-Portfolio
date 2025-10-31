@@ -1,1 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
+
+/* Font Scalability  */
+html {
+  font-size: 0.8333333333vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  html {
+    font-size: 1.5625vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 390px) {
+  html {
+    font-size: 4.102564103vw;
+  }
+}
+
+body {
+  transition: all 0.4s ease-out;
+}
+
+@theme {
+  /* Theme Colors  */
+  --color-bg: #eeebe5;
+  --color-primary: #5700ff;
+  --color-secondary: #f7f6f3;
+  --color-dark: #1a1a1a;
+  --color-grey: #4d4d4d;
+  --color-border: #e1dbd1;
+
+  /* Theme Breakpoints  */
+  --breakpoint-xs: 390px;
+  --breakpoint-lg: 1024px;
+
+  /* Font Family  */
+  --font-sans: "Manrope", sans-serif;
+}
