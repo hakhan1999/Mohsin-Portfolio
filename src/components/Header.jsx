@@ -31,7 +31,7 @@ const navItems = [
 
 const Header = () => {
   return (
-    <div className="container flex items-center justify-between py-8 border border-b-border ">
+    <header className="container flex items-center justify-between py-8 border-b border-b-border ">
       <div className="logo">
         <NavLink className="text-primary text-lg font-semibold" to="/">
           Jeffery Cannon.
@@ -72,7 +72,7 @@ const Header = () => {
           })}
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

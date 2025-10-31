@@ -37,6 +37,7 @@ body {
   --color-border: #e1dbd1;
   --color-gray:#333333;
   --color-primary-hover:#4a0bc5;
+  --color-light-grey:#808080;
 
   /* Theme Breakpoints  */
   --breakpoint-xs: 390px;
