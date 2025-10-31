@@ -3,7 +3,7 @@
 
 /* Font Scalability  */
 html {
-  font-size: 0.8333333333vw;
+  font-size: 1.1vw;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -35,6 +35,8 @@ body {
   --color-dark: #1a1a1a;
   --color-grey: #4d4d4d;
   --color-border: #e1dbd1;
+  --color-gray:#333333;
+  --color-primary-hover:#4a0bc5;
 
   /* Theme Breakpoints  */
   --breakpoint-xs: 390px;
@@ -42,4 +44,15 @@ body {
 
   /* Font Family  */
   --font-sans: "Manrope", sans-serif;
+}
+
+/* Spacing and Other Things */
+
+@layer utilities {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    width: 100%;
+    max-width: 100%;
+  }
 }
