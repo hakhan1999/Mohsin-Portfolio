@@ -1,5 +1,6 @@
 import Benefits from "../components/Benefits";
 import CreativeSkills from "../components/CreativeSkills";
+import FAQ from "../components/FAQ";
 import Hero from "../components/Hero";
 import Works from "../components/Works";
 
@@ -10,6 +11,7 @@ const Home = () => {
       <CreativeSkills />
       <Benefits />
       <Works />
+      <FAQ />
     </>
   );
 };

@@ -41,26 +41,26 @@ const Benefits = () => {
         <p className="text-sm mt-2.5 mb-10 text-grey">
           By choosing my web design service, you'll enjoy the following benefits
         </p>
-        <div className="grid grid-cols-2 gap-7.5 mb-7.5">
-          {benefits.slice(0, 2).map((benefit) => (
-            <Card
-              key={benefit.id}
-              title={benefit.title}
-              description={benefit.description}
-              align="left"
-            />
-          ))}
-        </div>
-        <div className="grid grid-cols-3 gap-7.5">
-          {benefits.slice(2).map((benefit) => (
-            <Card
-              key={benefit.id}
-              title={benefit.title}
-              description={benefit.description}
-              align="left"
-            />
-          ))}
-        </div>
+      </div>
+      <div className="grid grid-cols-2 gap-7.5 mb-7.5">
+        {benefits.slice(0, 2).map((benefit) => (
+          <Card
+            key={benefit.id}
+            title={benefit.title}
+            description={benefit.description}
+            align="left"
+          />
+        ))}
+      </div>
+      <div className="grid grid-cols-3 gap-7.5">
+        {benefits.slice(2).map((benefit) => (
+          <Card
+            key={benefit.id}
+            title={benefit.title}
+            description={benefit.description}
+            align="left"
+          />
+        ))}
       </div>
     </section>
   );

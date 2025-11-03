@@ -1,14 +1,27 @@
-const Card = ({ icon, title, description, align = "center" }) => {
+import Button from "./Button";
+
+const Card = ({
+  icon,
+  title,
+  description,
+  align = "center",
+  className,
+  button,
+}) => {
   const alignment =
     align === "left" ? "items-start text-left" : "items-center text-center";
 
   return (
     <div
-      className={`card bg-white rounded-xl p-12.5 flex flex-col ${alignment}`}
+      className={`card bg-white rounded-xl p-12.5 flex flex-col ${alignment} ${className}`}
     >
       {icon && (
-        <div className="p-2.5 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition hover:bg-primary-hover mb-5">
-          <img className="w-7" src={icon} alt={title} />
+        <div
+          className={`${align === "left" ? "flex-left" : "flex-center"} w-full`}
+        >
+          <div className="p-2.5 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition hover:bg-primary-hover mb-5 w-fit">
+            <img className="w-7" src={icon} alt={title} />
+          </div>
         </div>
       )}
 
@@ -27,6 +40,13 @@ const Card = ({ icon, title, description, align = "center" }) => {
       >
         {description}
       </p>
+      {button && (
+        <Button
+          text="Contact Me"
+          className="flex-left mt-7.5"
+          link="/contact-us"
+        />
+      )}
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-const Button = ({ link, text }) => {
+const Button = ({ link, text, className = "" }) => {
   return (
-    <button className="flex-center w-full mt-10">
+    <button className={`w-full ${className}`}>
       <NavLink
         className="flex gap-[0.578rem] w-fit bg-primary rounded-md transition hover:bg-primary-hover text-white px-4 py-3.5"
         to={link}

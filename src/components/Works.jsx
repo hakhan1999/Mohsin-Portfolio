@@ -39,7 +39,7 @@ const Works = () => {
           />
         ))}
       </div>
-      <Button link="portfolio" text="View All Projects →" />
+      <Button link="/portfolio" text="View All Projects →" className="flex-center mt-10" />
     </section>
   );
 };
