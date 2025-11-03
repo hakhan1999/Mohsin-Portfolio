@@ -68,10 +68,24 @@ body {
   .flex-center {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .flex {
     display: flex;
     align-items: center;
+  }
+
+  .sec-padded {
+    padding-top: 9.375rem;
+    padding-bottom: 9.375rem;
+  }
+
+  .top-padded {
+    padding-top: 9.375rem;
+  }
+
+  .bottom-padded {
+    padding-bottom: 9.375rem;
   }
 }

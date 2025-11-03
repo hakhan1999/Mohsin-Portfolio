@@ -11,7 +11,7 @@ const Hero = () => {
           <h1 className="text-dark text-[3.2rem] font-semibold leading-tight">
             Jeffery Cannon Welcome's You!
           </h1>
-          <p className="text-sm font-medium mt-2.5 mb-10 text-gray">
+          <p className="text-sm mt-2.5 mb-10 text-grey">
             I am a passionate and experienced web designer, dedicated to
             creating visually stunning and highly functional websites. Explore
             my portfolio to see the power of effective design in action
@@ -25,7 +25,7 @@ const Hero = () => {
               <span className="text-sm font-medium">Book a Call</span>
             </NavLink>
             <NavLink
-              className="text-sm font-medium transition hover:font-semibold"
+              className="text-sm text-grey transition hover:font-semibold"
               to="/portfolio"
             >
               View Portfolio →
@@ -37,19 +37,19 @@ const Hero = () => {
             <h2 className="text-5xl font-semibold">
               55<span className="text-primary">+</span>
             </h2>
-            <p className="text-sm mt-2 font-medium">Completed Projects</p>
+            <p className="text-sm mt-2 text-grey">Completed Projects</p>
           </div>
           <div className="counter w-[33.33%]">
             <h2 className="text-5xl font-semibold">
               20<span className="text-primary">+</span>
             </h2>
-            <p className="text-sm mt-2 font-medium">Happy Customers</p>
+            <p className="text-sm mt-2 text-grey">Happy Customers</p>
           </div>
           <div className="counter w-[33.33%]">
             <h2 className="text-5xl font-semibold">
               08<span className="text-primary">+</span>
             </h2>
-            <p className="text-sm mt-2 font-medium">Years of Experience</p>
+            <p className="text-sm mt-2 text-grey">Years of Experience</p>
           </div>
         </div>
       </div>
