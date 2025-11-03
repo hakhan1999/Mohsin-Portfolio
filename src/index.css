@@ -94,3 +94,54 @@ body {
     padding-bottom: 9.375rem;
   }
 }
+
+/* Swiper Pagination Styles  */
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #fbfaf9 !important;
+  border-radius: 0.5rem !important;
+  border: 0.063rem solid #e1dbd1 !important;
+  width: 2.875rem !important;
+  height: 2.875rem !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+  cursor: pointer !important;
+  top: -6rem !important;
+  transition: all 0.4s ease-out !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transition: all 0.4s ease-out !important;
+  background: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.swiper-button-next:hover svg path,
+.swiper-button-prev:hover svg path,
+.swiper-button-next:hover svg,
+.swiper-button-prev:hover svg {
+  fill: var(--color-white) !important;
+}
+
+.swiper-navigation-icon {
+  width: 1rem !important;
+  height: 1rem !important;
+  fill: var(--color-gray) !important;
+}
+
+.swiper-navigation-icon path {
+  fill: var(--color-gray);
+}
+
+.swiper-button-next {
+  right: 0 !important;
+}
+
+.swiper-button-prev {
+  right: calc(2.875rem + 1rem) !important;
+  left: auto !important;
+}
