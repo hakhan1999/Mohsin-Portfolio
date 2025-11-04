@@ -9,7 +9,7 @@ const navItems = [
   {
     id: 2,
     name: "About Me",
-    path: "/about-us",
+    path: "/about-me",
   },
   {
     id: 3,
@@ -19,7 +19,7 @@ const navItems = [
   {
     id: 4,
     name: "Contact Me",
-    path: "/contact-us",
+    path: "/contact-me",
   },
   {
     id: 5,
