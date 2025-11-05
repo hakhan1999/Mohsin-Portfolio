@@ -1,11 +1,21 @@
-import React from 'react'
+import InnerHero from "../components/portfolio/InnerHero";
 
 const ContactUs = () => {
   return (
-    <div>
-      Contact Us
-    </div>
-  )
-}
+    <>
+      <InnerHero
+        title="We’d love to here from you."
+        description="Here's what some of my satisfied clients have to say about my work"
+        mainIcon="/images/contactHero.svg"
+        icon1="/images/24-7.svg"
+        icon2="/images/quick.svg"
+        icon3="/images/flexible.svg"
+        list1="24 / 7 Assistance"
+        list2="Quick Change Resolutions"
+        list3="Flexible Working hours"
+      />
+    </>
+  );
+};
 
-export default ContactUs
+export default ContactUs;
