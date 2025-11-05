@@ -1,6 +1,6 @@
 const PersonalDetails = () => {
   return (
-    <section className="about-section container bottom-padded pt-20 flex justify-between">
+    <section className="about-section container bottom-padded pt-15 flex justify-between">
       <div className="col-1 w-[45%]">
         <img
           className="w-full"
