@@ -20,7 +20,7 @@ const Accordion = ({ title, description, defaultOpen = false }) => {
           style={{
             maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
           }}
-          className={`text-sm  text-gray leading-normal transition  ${
+          className={`text-lg  text-gray leading-normal transition  ${
             isOpen
               ? "opacity-100 max-h-96 pointer-events-all mt-4"
               : " opacity-0 max-h-0 pointer-events-none"
@@ -36,7 +36,7 @@ const Accordion = ({ title, description, defaultOpen = false }) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <img
-          src="src/assets/images/accordionToggle.svg"
+          src="/images/accordionToggle.svg"
           alt="Accordion Toggle"
           className={`w-4 transition
       ${

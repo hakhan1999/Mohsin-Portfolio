@@ -4,7 +4,7 @@ const PersonalDetails = () => {
       <div className="col-1 w-[45%]">
         <img
           className="w-full"
-          src="src/assets/images/aboutImage.webp"
+          src="/images/aboutImage.webp"
           alt="About Image"
         />
       </div>

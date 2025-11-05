@@ -28,17 +28,17 @@ const socialLinks = [
   {
     id: 1,
     link: "#",
-    imgLink: "src/assets/images/linkedIn.svg",
+    imgLink: "/images/linkedIn.svg",
   },
   {
     id: 2,
     link: "#",
-    imgLink: "src/assets/images/twitter.svg",
+    imgLink: "/images/twitter.svg",
   },
   {
     id: 3,
     link: "#",
-    imgLink: "src/assets/images/dribble.svg",
+    imgLink: "/images/dribble.svg",
   },
 ];
 
@@ -46,19 +46,19 @@ const contactLinks = [
   {
     id: 1,
     text: "jefferycannon@gmail.com",
-    iconPath: "src/assets/images/email.svg",
+    iconPath: "/images/email.svg",
     link: "mailto:jefferycannon@gmail.com",
   },
   {
     id: 2,
     text: "+91 91813 23 2309",
-    iconPath: "src/assets/images/phone-blue.svg",
+    iconPath: "/images/phone-blue.svg",
     link: "tel:+91 91813 23 2309",
   },
   {
     id: 3,
     text: "Somewhere in the World",
-    iconPath: "src/assets/images/location.svg",
+    iconPath: "/images/location.svg",
     link: "#",
   },
 ];
@@ -67,14 +67,14 @@ const Footer = () => {
   return (
     <footer className="footer container border-t border-t-border">
       <div className="top flex justify-between pt-10 pb-5">
-        <NavLink className="text-primary text-lg font-semibold" to="/">
+        <NavLink className="text-primary text-2xl font-semibold" to="/">
           Jeffery Cannon.
         </NavLink>
-        <ul className="flex gap-5">
+        <ul className="flex gap-7.5">
           {navItems.map((item) => (
             <li key={item.id}>
               <NavLink
-                className="text-sm text-gray transition font-medium hover:font-semibold "
+                className="text-lg  text-gray transition font-medium hover:font-semibold "
                 to={item.path}
               >
                 {item.name}
@@ -100,7 +100,7 @@ const Footer = () => {
             <NavLink
               key={item.id}
               to={item.link}
-              className={`flex gap-[0.478rem] relative ${
+              className={`flex gap-[0.478rem] relative text-lg ${
                 index !== 0
                   ? "before:content-[''] before:absolute before:-left-6 before:top-1/2 before:-translate-y-1/2 before:w-px before:h-4 before:bg-border"
                   : ""
@@ -114,7 +114,7 @@ const Footer = () => {
       </div>
 
       <div className="bottom flex justify-center py-5">
-        <p className="text-light-grey text-sm">
+        <p className="text-light-grey text-lg">
           Copyright © 2023 Jeffery Cannon. All rights reserved.
         </p>
       </div>

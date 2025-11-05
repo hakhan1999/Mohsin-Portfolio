@@ -8,7 +8,7 @@ const TestimonialCard = ({ name, description, product }) => {
         {[...Array(5)].map((_, i) => (
           <img
             key={i}
-            src="src/assets/images/star.svg"
+            src="/images/star.svg"
             alt="Star"
             style={{
               filter:
@@ -19,7 +19,7 @@ const TestimonialCard = ({ name, description, product }) => {
         ))}
       </div>
 
-      <p className="text-sm leading-normal text-grey min-h-52">{description}</p>
+      <p className="text-[1rem] leading-normal text-gray min-h-72">{description}</p>
     </div>
   );
 };

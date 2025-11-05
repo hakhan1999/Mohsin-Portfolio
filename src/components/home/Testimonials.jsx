@@ -43,7 +43,7 @@ const Testimonials = () => {
         <h2 className="text-5xl text-gray font-semibold mb-1.5">
           What My Clients Say About Me
         </h2>
-        <p className="text-sm mt-2.5 mb-10 text-grey">
+        <p className="text-lg mt-2.5 mb-10 text-gray">
           Here's what some of my satisfied clients have to say about my work
         </p>
       </div>

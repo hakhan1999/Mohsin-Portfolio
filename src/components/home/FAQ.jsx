@@ -41,7 +41,7 @@ const FAQ = () => {
         <h2 className="text-5xl text-gray font-semibold mb-1.5">
           Frequently Asked Questions
         </h2>
-        <p className="text-sm mt-2.5 mb-10 text-grey">
+        <p className="text-lg mt-2.5 mb-10 text-gray">
           Here are answers to some common questions
         </p>
       </div>
@@ -58,7 +58,7 @@ const FAQ = () => {
         </div>
         <Card
           className={"w-[30%]"}
-          icon="src/assets/images/star.svg"
+          icon="/images/star.svg"
           title="Still have any Questions ?"
           description="Lets collaborate to create an exceptional website that sets you apart from the competition. Contact me today to discuss your web design needs and bring your digital vision to life!"
           align="left"

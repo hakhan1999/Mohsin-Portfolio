@@ -3,42 +3,42 @@ import Card from "./Card";
 const skills = [
   {
     id: 1,
-    iconPath: "src/assets/images/web-design.svg",
+    iconPath: "/images/web-design.svg",
     title: "Web Design Principles",
     description:
       "Proficiency in the fundamental principles of design, such as layout, color theory, typography, and visual hierarchy.",
   },
   {
     id: 2,
-    iconPath: "src/assets/images/ui.svg",
+    iconPath: "/images/ui.svg",
     title: "User Interface - UI Design",
     description:
       "Ability to create visually appealing and intuitive user interfaces that enhance user experience and engagement.",
   },
   {
     id: 3,
-    iconPath: "src/assets/images/ux.svg",
+    iconPath: "/images/ux.svg",
     title: "User Experience - UX Design",
     description:
       "Understanding of user behavior and psychology to design seamless and enjoyable user experiences that meet user needs and goals.",
   },
   {
     id: 4,
-    iconPath: "src/assets/images/responsive.svg",
+    iconPath: "/images/responsive.svg",
     title: "Responsive Web Design",
     description:
       "Knowledge of designing websites that adapt and function seamlessly across various devices and screen sizes.",
   },
   {
     id: 5,
-    iconPath: "src/assets/images/wireframing.svg",
+    iconPath: "/images/wireframing.svg",
     title: "Wireframing and Prototyping",
     description:
       "Ability to create wireframes and interactive prototypes to visualize and test website layouts and functionality.",
   },
   {
     id: 6,
-    iconPath: "src/assets/images/mobile-friendly.svg",
+    iconPath: "/images/mobile-friendly.svg",
     title: "Mobile-Friendly Optimization",
     description:
       "Proficiency in the fundamental principles of design, such as layout, color theory, typography, and visual hierarchy.",
@@ -52,7 +52,7 @@ const CreativeSkills = () => {
         <h2 className="text-5xl text-gray font-semibold mb-1.5">
           Creative Skills
         </h2>
-        <p className="text-sm mt-2.5 mb-10 text-grey">
+        <p className="text-lg mt-2.5 mb-10 text-gray">
           As a web designer, I possess a diverse set of skills and expertise to
           bring your web design visions to life
         </p>

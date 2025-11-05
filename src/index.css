@@ -82,16 +82,16 @@ body {
   }
 
   .sec-padded {
-    padding-top: 9.375rem;
-    padding-bottom: 9.375rem;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
   }
 
   .top-padded {
-    padding-top: 9.375rem;
+    padding-top: 6.25rem;
   }
 
   .bottom-padded {
-    padding-bottom: 9.375rem;
+    padding-bottom: 6.25rem;
   }
 }
 

@@ -1,35 +1,21 @@
 import Button from "./Button";
 import WorksCard from "./WorksCard";
 
-const works = [
-  {
-    id: 1,
-    name: "Z - Aura Perfume Website Design",
-    imagePath: "src/assets/images/worksImage-1.webp",
-    link: "#",
-  },
-  {
-    id: 2,
-    name: "Forhelp Charity Website Design",
-    imagePath: "src/assets/images/worksImage-2.webp",
-    link: "#",
-  },
-  {
-    id: 3,
-    name: "Skill Bridge Website Design",
-    imagePath: "src/assets/images/worksImage-3.webp",
-    link: "#",
-  },
-];
-const Works = () => {
+const Works = ({
+  title = "My Works",
+  subtitle = "Here's what some of my satisfied clients have to say about my work",
+  works = [],
+  showButton = false,
+  buttonLink = "/portfolio/",
+  buttonText = "View All Projects →",
+}) => {
   return (
     <section className="container bottom-padded our-works">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5">My Works</h2>
-        <p className="text-sm mt-2.5 mb-10 text-grey">
-          Here's what some of my satisfied clients have to say about my work
-        </p>
+        <h2 className="text-5xl text-gray font-semibold mb-1.5">{title}</h2>
+        <p className="text-lg mt-2.5 mb-10 text-gray">{subtitle}</p>
       </div>
+
       <div className="grid grid-cols-3 gap-7.5">
         {works.map((item) => (
           <WorksCard
@@ -39,7 +25,14 @@ const Works = () => {
           />
         ))}
       </div>
-      <Button link="/portfolio" text="View All Projects →" className="flex-center mt-10" />
+
+      {showButton && works.length <= 3 && (
+        <Button
+          link={buttonLink}
+          text={buttonText}
+          className="flex-center mt-10 w-full"
+        />
+      )}
     </section>
   );
 };

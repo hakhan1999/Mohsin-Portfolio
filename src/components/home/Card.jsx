@@ -26,16 +26,16 @@ const Card = ({
       )}
 
       <h3
-        className={`font-semibold text-grey text-xl  w-full ${
-          align === "left" ? "text-left mb-0" : "text-center mb-2"
+        className={`font-semibold text-gray text-xl  w-full ${
+          align === "left" ? "text-left mb-0 text-2xl" : "text-center mb-2"
         }`}
       >
         {title}
       </h3>
 
       <p
-        className={`text-sm  text-gray leading-normal ${
-          align === "left" ? "text-left mb-0 mt-5" : "text-center mb-10 mt-2.5 "
+        className={`text-lg  text-gray leading-normal ${
+          align === "left" ? "text-left mb-0 mt-5" : "text-center mt-2.5 "
         }`}
       >
         {description}
@@ -43,8 +43,9 @@ const Card = ({
       {button && (
         <Button
           text="Contact Me"
-          className="flex-left mt-7.5"
+          className="flex-left mt-7.5 w-full"
           link="/contact-us"
+          
         />
       )}
     </div>

@@ -7,7 +7,7 @@ const timelineData = [
     title: "Expanding Horizons",
     description:
       "Expanding Horizons Continuing on my path of growth and exploration, I expanded my skill set by delving into emerging technologies and design trends.",
-    iconPath: "src/assets/images/now.svg",
+    iconPath: "/images/now.svg",
     color: "#9E00FF",
   },
   {
@@ -16,7 +16,7 @@ const timelineData = [
     title: "A Collaborative Partnership",
     description:
       "I formed a strategic partnership with a digital marketing agency, combining my web design expertise with their marketing process.",
-    iconPath: "src/assets/images/2022.svg",
+    iconPath: "/images/2022.svg",
     color: "#5EDC11",
   },
   {
@@ -25,7 +25,7 @@ const timelineData = [
     title: " Entrepreneurial Pursuits",
     description:
       "Entrepreneurial Pursuits Fueled by a desire for creative freedom and the opportunity to work with diverse clients, I decided to venture into freelancing.",
-    iconPath: "src/assets/images/2021.svg",
+    iconPath: "/images/2021.svg",
     color: "#FFCE22",
   },
   {
@@ -34,7 +34,7 @@ const timelineData = [
     title: "A Corporate Adventure",
     description:
       "I joined a leading technology company as their in-house web designer. This experience allowed me to work on large-scale projects.",
-    iconPath: "src/assets/images/2020.svg",
+    iconPath: "/images/2020.svg",
     color: "#FF7222",
   },
   {
@@ -43,7 +43,7 @@ const timelineData = [
     title: "Learning and Growing",
     description:
       "I had the opportunity to work with an innovative design agency, where I honed my skills and expanded my knowledge. Collaborating with talent.",
-    iconPath: "src/assets/images/2019.svg",
+    iconPath: "/images/2019.svg",
     color: "#FF22E9",
   },
   {
@@ -52,7 +52,7 @@ const timelineData = [
     title: "A World of Possibilities In 2018",
     description:
       "I embarked on an exhilarating journey into the world of web design. Fueled by a deep passion for creativity and technology, I took my first steps into this dynamic field.",
-    iconPath: "src/assets/images/2018.svg",
+    iconPath: "/images/2018.svg",
   },
 ];
 

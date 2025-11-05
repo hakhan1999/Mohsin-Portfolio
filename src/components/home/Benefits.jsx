@@ -38,7 +38,7 @@ const Benefits = () => {
     <section className="container bottom-padded benefits">
       <div className="sec-title flex-center flex-col">
         <h2 className="text-5xl text-gray font-semibold mb-1.5">Benefits</h2>
-        <p className="text-sm mt-2.5 mb-10 text-grey">
+        <p className="text-lg mt-2.5 mb-10 text-gray">
           By choosing my web design service, you'll enjoy the following benefits
         </p>
       </div>
