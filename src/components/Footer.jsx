@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 const navItems = [
@@ -85,11 +84,11 @@ const Footer = () => {
         <div className="social flex gap-3.5">
           {socialLinks.map((item) => (
             <NavLink
-              className="p-2.5 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition hover:bg-primary-hover"
+              className="p-3 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition hover:bg-primary-hover"
               to={item.path}
               key={item.id}
             >
-              <img className="w-5" src={item.imgLink} alt="Social Icon" />
+              <img className="w-6" src={item.imgLink} alt="Social Icon" />
             </NavLink>
           ))}
         </div>

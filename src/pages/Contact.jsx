@@ -1,3 +1,5 @@
+import ContactDetails from "../components/contact/ContactDetails";
+import FAQ from "../components/home/FAQ";
 import InnerHero from "../components/portfolio/InnerHero";
 
 const ContactUs = () => {
@@ -14,6 +16,8 @@ const ContactUs = () => {
         list2="Quick Change Resolutions"
         list3="Flexible Working hours"
       />
+      <ContactDetails />
+      <FAQ />
     </>
   );
 };
