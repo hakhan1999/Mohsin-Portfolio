@@ -37,12 +37,14 @@ const Benefits = () => {
   return (
     <section className="container bottom-padded benefits">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5">Benefits</h2>
-        <p className="text-lg mt-2.5 mb-10 text-gray">
+        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem]">
+          Benefits
+        </h2>
+        <p className="text-lg mt-2.5 mb-10 text-gray max-sm:text-sm max-sm:text-center">
           By choosing my web design service, you'll enjoy the following benefits
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-7.5 mb-7.5">
+      <div className="grid grid-cols-2 gap-7.5 mb-7.5 max-sm:grid-cols-1 max-sm:gap-5">
         {benefits.slice(0, 2).map((benefit) => (
           <Card
             key={benefit.id}
@@ -52,7 +54,7 @@ const Benefits = () => {
           />
         ))}
       </div>
-      <div className="grid grid-cols-3 gap-7.5">
+      <div className="grid grid-cols-3 gap-7.5 max-sm:grid-cols-1 max-sm:gap-5">
         {benefits.slice(2).map((benefit) => (
           <Card
             key={benefit.id}

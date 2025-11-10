@@ -13,7 +13,7 @@ const Card = ({
 
   return (
     <div
-      className={`card bg-white rounded-xl p-12.5 flex flex-col ${alignment} ${className}`}
+      className={`card bg-white rounded-xl p-12.5 max-sm:p-8 flex flex-col ${alignment} ${className}`}
     >
       {icon && (
         <div
@@ -26,16 +26,20 @@ const Card = ({
       )}
 
       <h3
-        className={`font-semibold text-gray text-xl  w-full ${
-          align === "left" ? "text-left mb-0 text-2xl" : "text-center mb-2"
+        className={`font-semibold text-gray text-xl  w-full max-sm:text-lg ${
+          align === "left"
+            ? "text-left mb-0 text-2xl max-sm:pb-5 max-sm:border-b max-sm:border-b-border"
+            : "text-center mb-2"
         }`}
       >
         {title}
       </h3>
 
       <p
-        className={`text-lg  text-gray leading-normal ${
-          align === "left" ? "text-left mb-0 mt-5" : "text-center mt-2.5 "
+        className={`text-lg  text-gray leading-normal max-sm:text-sm ${
+          align === "left"
+            ? "text-left mb-0 mt-5"
+            : "text-center mt-2.5 max-sm:mt-1"
         }`}
       >
         {description}
@@ -45,7 +49,6 @@ const Card = ({
           text="Contact Me"
           className="flex-left mt-7.5 w-full"
           link="/contact-us"
-          
         />
       )}
     </div>
