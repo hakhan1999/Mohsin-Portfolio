@@ -94,10 +94,10 @@ export default function Timeline() {
   return (
     <section className="container pb-110 timeline-sec">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5">
+        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem]">
           Milestones of My Career
         </h2>
-        <p className="text-lg mt-2.5 mb-10 text-grey w-[70%] mx-auto text-center">
+        <p className="text-lg mt-2.5 mb-10 text-grey w-[70%] mx-auto text-center max-sm:text-center max-sm:text-sm max-sm:w-full">
           Lorem ipsum dolor sit amet consectetur. Nisl ut neque tortor nulla
           felis nunc. Sit ac sed sed pulvinar sit purus morbi. Elit amet sed
           velit auctor urna vitae nam ultricies massa.
@@ -119,17 +119,21 @@ export default function Timeline() {
         {timelineData.map((item, index) => {
           if (index === timelineData.length - 1) {
             return (
-              <div key={item.id} className="relative">
+              <div key={item.id} className="relative w-full">
                 <p className="absolute top-0 left-1/2 -translate-x-1/2 text-lg text-gray py-2 px-6 rounded-lg bg-white font-medium after:content-[''] ">
                   {item.year}
                 </p>
-                <div className="p-12.5 bg-white rounded-lg flex gap-7.5 w-180 flex-start absolute top-20 left-1/2 -translate-x-1/2 after:block after:w-0 after:h-0 after:border-solid after:border-x-[11.5px] after:border-b-12 after:border-x-transparent after:border-b-white after:absolute after:-top-2 after:left-1/2 after:-translate-x-1/2">
-                  <img src={item.iconPath} alt={`${item.year} Icon`} />
+                <div className="p-12.5 max-sm:p-10 bg-white rounded-lg flex gap-7.5 max-sm:gap-6 max-sm:flex-col max-sm:justify-center max-sm:items-center! w-180 max-sm:w-full flex-start absolute top-20 left-1/2 -translate-x-1/2 after:block after:w-0 after:h-0 after:border-solid after:border-x-[11.5px] after:border-b-12 after:border-x-transparent after:border-b-white after:absolute after:-top-2 after:left-1/2 after:-translate-x-1/2">
+                  <img
+                    className="max-sm:w-17.5"
+                    src={item.iconPath}
+                    alt={`${item.year} Icon`}
+                  />
                   <div className="flex flex-col items-start">
-                    <p className="text-lg text-gray font-semibold mb-2 text- w-full">
+                    <p className="text-lg text-gray font-semibold mb-2 text- w-full max-sm:text-[1rem] max-sm:text-center">
                       {item.title}
                     </p>
-                    <p className="text-gray text-lg text-left">
+                    <p className="text-gray text-lg text-left max-sm:text-center max-sm:text-sm max-sm:leading-normal">
                       {item.description}
                     </p>
                   </div>
@@ -140,34 +144,38 @@ export default function Timeline() {
             return (
               <div
                 key={item.id}
-                className={`relative flex gap-[9.3rem] py-20 ${
+                className={`relative flex gap-[9.3rem] max-sm:gap-18 py-20 max-sm:pb-10 max-sm:flex-col ${
                   index % 2 === 0 ? "" : "flex-row-reverse"
                 }`}
               >
-                <p className="absolute top-0 left-1/2 -translate-x-1/2 text-lg text-gray py-2 px-6 rounded-lg bg-white font-medium">
+                <p className="absolute top-0 left-1/2 -translate-x-1/2 text-lg text-gray py-2 px-6 rounded-lg bg-white font-medium max-sm:text-[1rem]">
                   {item.year}
                 </p>
 
                 <div
-                  className={`p-12.5 bg-white rounded-lg flex gap-7.5 w-[44%] relative ${
+                  className={`p-12.5 bg-white rounded-lg flex gap-7.5 max-sm:gap-6 w-[44%] max-sm:w-full relative max-sm:order-2 max-sm:p-10 max-sm:flex-col-reverse ${
                     index % 2 === 0 ? "" : "flex-row-reverse"
                   } ${
                     index % 2 === 0
-                      ? "after:content-[''] after:block after:w-0 after:h-0 after:border-solid after:border-y-[11.5px] after:border-l-12 after:border-y-transparent after:border-l-white after:absolute after:-right-2"
-                      : "after:content-[''] after:block after:w-0 after:h-0 after:border-solid after:border-y-[11.5px] after:border-r-12 after:border-y-transparent after:border-r-white after:absolute after:-left-2"
+                      ? "after:content-[''] after:block after:w-0 after:h-0 after:border-solid after:border-y-[11.5px] after:border-l-12 after:border-y-transparent after:border-l-white after:absolute after:-right-2 max-sm:after:hidden"
+                      : "after:content-[''] after:block after:w-0 after:h-0 after:border-solid after:border-y-[11.5px] after:border-r-12 after:border-y-transparent after:border-r-white after:absolute after:-left-2 max-sm:after:hidden"
                   }`}
                 >
                   <p
                     className={`${
                       index % 2 === 0 ? "text-left" : ""
-                    } text-gray text-lg`}
+                    } text-gray text-lg max-sm:text-sm max-sm:text-center max-sm:leading-normal`}
                   >
                     {item.description}
                   </p>
 
-                  <img src={item.iconPath} alt={`${item.year} Icon`} />
+                  <img
+                    className="max-sm:w-17.5"
+                    src={item.iconPath}
+                    alt={`${item.year} Icon`}
+                  />
                 </div>
-                <div className="flex justify-center absolute left-1/2 -translate-x-1/2 border-[0.438rem] border-secondary rounded-full bg-white w-12 h-12">
+                <div className="flex justify-center absolute left-1/2 -translate-x-1/2 border-[0.438rem] border-secondary rounded-full bg-white w-12 h-12 max-sm:top-42 max-sm:z-2">
                   <div
                     className="w-3 h-3 rounded-full transition-all duration-500"
                     style={{
@@ -179,7 +187,7 @@ export default function Timeline() {
                   />
                 </div>
 
-                <p className="text-lg text-gray py-2 px-6 rounded-lg bg-white font-semibold">
+                <p className="text-lg text-gray py-2 px-6 rounded-lg bg-white font-semibold max-sm:order-1 max-sm:text-[1rem]">
                   {item.title}
                 </p>
               </div>

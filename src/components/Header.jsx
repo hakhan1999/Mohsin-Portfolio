@@ -73,7 +73,7 @@ const Header = () => {
         aria-label="Toggle menu"
       >
         {/* Simple burger icon */}
-        <img src="public/images/hamburger.svg" alt="Mobile Menu Toggle" />
+        <img src="/images/hamburger.svg" alt="Mobile Menu Toggle" />
       </button>
 
       {/* Mobile Menu Overlay */}
