@@ -9,17 +9,17 @@ const navItems = [
   {
     id: 2,
     name: "About Me",
-    path: "/about-us",
+    path: "/about-me/",
   },
   {
     id: 3,
     name: "Portfolio",
-    path: "/portfolio",
+    path: "/portfolio/",
   },
   {
     id: 4,
     name: "Contact Me",
-    path: "/contact-us",
+    path: "/contact-me/",
   },
 ];
 
@@ -58,7 +58,7 @@ const contactLinks = [
     id: 3,
     text: "Somewhere in the World",
     iconPath: "/images/location.svg",
-    link: "#",
+    link: "/location",
   },
 ];
 
@@ -91,7 +91,11 @@ const Footer = () => {
               to={item.path}
               key={item.id}
             >
-              <img className="w-6" src={item.imgLink} alt="Social Icon" />
+              <img
+                className="w-6 max-sm:w-5"
+                src={item.imgLink}
+                alt="Social Icon"
+              />
             </NavLink>
           ))}
         </div>

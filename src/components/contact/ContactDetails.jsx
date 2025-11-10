@@ -17,7 +17,7 @@ const contactDetails = [
     id: 3,
     mainText: "Somewhere in the World",
     subText: "Location",
-    link: "#",
+    link: "/location",
   },
 ];
 
@@ -40,20 +40,20 @@ const socialLinks = [
 ];
 const ContactDetails = () => {
   return (
-    <section className="container bottom-padded contact-details flex-start justify-between">
-      <div className="col-1 w-[40%]">
-        <div className="details-wrapper flex flex-col gap-5 w-full">
+    <section className="container bottom-padded contact-details flex-start justify-between max-sm:flex-col-reverse max-sm:gap-10">
+      <div className="col-1 w-[40%] max-sm:w-full">
+        <div className="details-wrapper flex flex-col gap-5 max-sm:gap-3.5 w-full">
           {contactDetails.map((item) => (
             <div
               key={item.id}
               className="px-7.5 py-6 w-full flex justify-between bg-white rounded-lg"
             >
               <div className="flex flex-col gap-1 justify-start">
-                <p className="text-lg w-full text-grey leading-normal">
+                <p className="text-lg w-full text-grey leading-normal max-sm:text-sm">
                   {item.subText}
                 </p>
                 <NavLink
-                  className="text-gray text-xl leading-normal font-medium"
+                  className="text-gray text-xl leading-normal font-medium max-sm:text-[1rem]"
                   to={item.link}
                   target={item.id === 3 ? "_blank" : undefined}
                 >
@@ -85,24 +85,30 @@ const ContactDetails = () => {
             </div>
           ))}
         </div>
-        <div className="social mt-12.5">
+        <div className="social mt-12.5 max-sm:text-center max-sm:text-[1rem]">
           <p className="text-gray text-xl leading-normal font-medium mb-4">
             My Social Profiles
           </p>
-          <div className=" flex gap-5 p-5 rounded-lg bg-white w-fit">
-            {socialLinks.map((item) => (
-              <NavLink
-                className="p-3 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition hover:bg-primary-hover"
-                to={item.path}
-                key={item.id}
-              >
-                <img className="w-6" src={item.imgLink} alt="Social Icon" />
-              </NavLink>
-            ))}
+          <div className="flex max-sm:justify-center">
+            <div className=" flex gap-5 p-5 rounded-lg bg-white w-fit">
+              {socialLinks.map((item) => (
+                <NavLink
+                  className="p-3 rounded-md bg-primary shadow-[inset_0px_0px_14px_4px_#ffffff80] transition hover:bg-primary-hover"
+                  to={item.path}
+                  key={item.id}
+                >
+                  <img
+                    className="w-6 max-sm:w-5"
+                    src={item.imgLink}
+                    alt="Social Icon"
+                  />
+                </NavLink>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      <div className="col-2 w-[56%]">
+      <div className="col-2 w-[56%] max-sm:w-full">
         <ContactForm />
       </div>
     </section>

@@ -48,7 +48,7 @@ const Card = ({
         <Button
           text="Contact Me"
           className="flex-left mt-7.5 w-full"
-          link="/contact-us"
+          link="/contact-me/"
         />
       )}
     </div>
