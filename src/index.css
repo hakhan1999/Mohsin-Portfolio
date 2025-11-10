@@ -88,6 +88,10 @@ body {
   .bottom-padded {
     @apply pb-25;
   }
+
+  .active{
+    @apply text-primary;
+  }
 }
 
 /* =======================
