@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
-/* Font Scalability  */
+/* Font Scalability */
 html {
+  @apply scroll-smooth overflow-x-hidden;
   font-size: 1.1vw;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /* Tablet */
@@ -23,10 +22,13 @@ html {
 }
 
 body {
-  transition: all 0.4s ease-out;
+  @apply transition-all duration-400 ease-out;
   background-color: var(--color-bg);
 }
 
+/* =======================
+   THEME VARIABLES
+========================= */
 @theme {
   /* Theme Colors  */
   --color-bg: #eeebe5;
@@ -39,63 +41,59 @@ body {
   --color-primary-hover: #4a0bc5;
   --color-light-grey: #808080;
 
-  /* Theme Breakpoints  */
+  /* Breakpoints */
   --breakpoint-xs: 390px;
   --breakpoint-lg: 1024px;
 
-  /* Font Family  */
+  /* Font Family */
   --font-sans: "Manrope", sans-serif;
 }
 
-/* Spacing and Other Things */
-
+/* =======================
+   CUSTOM UTILITIES
+========================= */
 @layer utilities {
   .container {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    width: 100%;
-    max-width: 100%;
+    @apply px-20 w-full max-w-full max-xs:px-4;
   }
 
   .container-left {
-    padding-left: 5rem;
+    @apply pl-20;
   }
 
   .transition {
-    transition: all 0.4s ease-out;
+    @apply transition-all duration-400 ease-out;
   }
 
   .flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @apply flex items-center justify-center;
   }
 
   .flex {
-    display: flex;
-    align-items: center;
+    @apply flex items-center;
   }
 
   .flex-start {
-    display: flex;
-    align-items: flex-start;
+    @apply flex items-start;
   }
 
   .sec-padded {
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+    @apply py-25;
   }
 
   .top-padded {
-    padding-top: 6.25rem;
+    @apply pt-25;
   }
 
   .bottom-padded {
-    padding-bottom: 6.25rem;
+    @apply pb-25;
   }
 }
 
-/* Swiper Pagination Styles  */
+/* =======================
+   SWIPER STYLES
+========================= */
+/* Swiper Pagination Styles */
 .swiper-button-next,
 .swiper-button-prev {
   display: flex !important;
@@ -144,4 +142,27 @@ body {
 .swiper-button-prev {
   right: calc(2.875rem + 1rem) !important;
   left: auto !important;
+}
+
+/* Mobile Responsiveness  */
+@media (max-width: 390px) {
+  .container {
+    @apply px-4;
+  }
+
+  .sec-padded {
+    @apply py-15;
+  }
+
+  .top-padded {
+    @apply pt-15;
+  }
+
+  .bottom-padded {
+    @apply pb-15;
+  }
+
+  .container-left {
+    @apply pl-4 pr-4;
+  }
 }

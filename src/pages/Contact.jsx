@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <>
       <InnerHero
-        title="We’d love to here from you."
+        title="I’d love to here from you."
         description="Here's what some of my satisfied clients have to say about my work"
         mainIcon="/images/contactHero.svg"
         icon1="/images/24-7.svg"

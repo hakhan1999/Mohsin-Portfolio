@@ -1,26 +1,11 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const navItems = [
-  {
-    id: 1,
-    name: "Home",
-    path: "/",
-  },
-  {
-    id: 2,
-    name: "About Me",
-    path: "/about-me/",
-  },
-  {
-    id: 3,
-    name: "Portfolio",
-    path: "/portfolio/",
-  },
-  {
-    id: 4,
-    name: "Contact Me",
-    path: "/contact-me/",
-  },
+  { id: 1, name: "Home", path: "/" },
+  { id: 2, name: "About Me", path: "/about-me/" },
+  { id: 3, name: "Portfolio", path: "/portfolio/" },
+  { id: 4, name: "Contact Me", path: "/contact-me/" },
   {
     id: 5,
     name: "Book a Call",
@@ -30,14 +15,19 @@ const navItems = [
 ];
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <header className="container flex justify-between py-8 border-b border-b-border ">
+    <header className="container flex justify-between items-center py-8 max-sm:py-[1.531rem] border-b border-b-border relative">
+      {/* Logo */}
       <div className="logo">
-        <NavLink className="text-primary text-2xl font-semibold" to="/">
+        <NavLink className="text-primary text-2xl max-sm:text-lg font-semibold" to="/">
           Jeffery Cannon.
         </NavLink>
       </div>
-      <nav className="nav">
+
+      {/* Desktop Menu */}
+      <nav className="hidden md:block">
         <ul className="flex gap-7.5">
           {navItems.map((item) => {
             if (item.id === 5) {
@@ -57,7 +47,7 @@ const Header = () => {
               <li key={item.id}>
                 <NavLink
                   className={({ isActive }) =>
-                    `text-lg text-gray transition font-medium hover:font-semibold  ${
+                    `text-lg text-gray transition font-medium hover:font-semibold ${
                       isActive
                         ? "px-5.5 bg-white py-3 rounded-md font-semibold"
                         : ""
@@ -72,6 +62,37 @@ const Header = () => {
           })}
         </ul>
       </nav>
+
+      {/* Mobile Menu Icon */}
+      <button
+        className="md:hidden z-50"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        {/* Simple burger icon */}
+        <img src="public/images/hamburger.svg" alt="Mobile Menu Toggle" />
+      </button>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`fixed top-0 left-0 w-full h-full bg-white z-40 transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <ul className="flex flex-col items-center justify-center h-full gap-8">
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <NavLink
+                to={item.path}
+                className="text-2xl text-gray font-semibold"
+                onClick={() => setMenuOpen(false)} // close on click
+              >
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };

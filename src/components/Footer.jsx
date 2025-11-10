@@ -112,9 +112,19 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bottom flex justify-center py-5">
+      <div className="bottom flex justify-between py-8">
         <p className="text-light-grey text-lg">
-          Copyright © 2023 Jeffery Cannon. All rights reserved.
+          Copyright © 2025 Mohsin Alam. All rights reserved.
+        </p>
+        <p className="text-light-grey text-lg">
+          Designed with ❤ by Me and Developed By{" "}
+          <NavLink
+            className="text-gray underline"
+            to="https://www.linkedin.com/in/hassan-ahmed-khan-533772233/"
+            target="_blank"
+          >
+            Hassan Ahmed Khan
+          </NavLink>
         </p>
       </div>
     </footer>

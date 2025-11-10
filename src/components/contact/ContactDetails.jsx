@@ -4,13 +4,13 @@ const contactDetails = [
   {
     id: 1,
     mainText: "jefferycannon@gmail.com",
-    subText: "You can Email Me Here",
+    subText: "You can email me here",
     link: "mailto:jefferycannon@gmail.com",
   },
   {
     id: 2,
     mainText: "+91 91813 23 2309",
-    subText: "Give Me a Call on",
+    subText: "Give me a call on",
     link: "tel:+91 91813 23 2309",
   },
   {
