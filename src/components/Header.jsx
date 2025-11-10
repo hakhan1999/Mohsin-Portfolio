@@ -21,7 +21,10 @@ const Header = () => {
     <header className="container flex justify-between items-center py-8 max-sm:py-[1.531rem] border-b border-b-border relative">
       {/* Logo */}
       <div className="logo">
-        <NavLink className="text-primary text-2xl max-sm:text-lg font-semibold" to="/">
+        <NavLink
+          className="text-primary text-2xl max-sm:text-lg font-semibold"
+          to="/"
+        >
           Jeffery Cannon.
         </NavLink>
       </div>
