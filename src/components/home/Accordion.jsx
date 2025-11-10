@@ -5,13 +5,13 @@ const Accordion = ({ title, description, defaultOpen = false }) => {
   const contentRef = useRef(null);
 
   return (
-    <div className="p-7.5 bg-bg rounded-xl relative">
-      <div className="accordion-content pr-20">
+    <div className="p-7.5 max-sm:p-5 bg-bg rounded-xl relative">
+      <div className="accordion-content">
         <h3
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className="text-xl text-gray font-medium cursor-pointer"
+          className="text-xl text-gray font-medium pr-20 cursor-pointer max-sm:text-[1rem] max-sm:leading-6"
         >
           {title}
         </h3>
@@ -20,7 +20,7 @@ const Accordion = ({ title, description, defaultOpen = false }) => {
           style={{
             maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
           }}
-          className={`text-lg  text-gray leading-normal transition  ${
+          className={`text-lg  text-gray leading-normal transition pr-20 max-sm:pr-0 max-sm:text-sm  ${
             isOpen
               ? "opacity-100 max-h-96 pointer-events-all mt-4"
               : " opacity-0 max-h-0 pointer-events-none"
@@ -31,7 +31,7 @@ const Accordion = ({ title, description, defaultOpen = false }) => {
       </div>
 
       <div
-        className={`toggle p-[0.906rem] rounded-lg border transition border-border hover:bg-primary hover:border-primary absolute top-5.5 right-7.5 cursor-pointer group
+        className={`toggle p-[0.906rem] max-sm:p-[0.688rem]  rounded-lg border transition border-border hover:bg-primary hover:border-primary absolute top-5.5 max-sm:top-5 right-7.5 max-sm:right-5 cursor-pointer group
     ${isOpen ? "bg-primary border-primary" : "bg-transparent border-border"}`}
         onClick={() => setIsOpen(!isOpen)}
       >

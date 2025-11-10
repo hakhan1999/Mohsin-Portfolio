@@ -34,7 +34,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="bottom flex flex-wrap items-center bg-white py-10 px-12.5 mt-10 rounded-tl-xl rounded-bl-xl gap-7.5 max-sm:gap-2.5 max-sm:bg-transparent max-sm:py-0 max-sm:px-0">
+        <div className="bottom flex max-sm:flex-wrap items-center bg-white py-10 px-12.5 mt-10 rounded-tl-xl rounded-bl-xl gap-7.5 max-sm:gap-2.5 max-sm:bg-transparent max-sm:py-0 max-sm:px-0">
           <div className="counter w-[33.33%] max-sm:w-full max-sm:bg-white max-sm:rounded-lg p-4.5">
             <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center">
               55<span className="text-primary">+</span>

@@ -40,15 +40,15 @@ const Testimonials = () => {
   return (
     <section className="container bottom-padded testimonials overflowShapes relative">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5">
+        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-center max-sm:text-[1.75rem]">
           What My Clients Say About Me
         </h2>
-        <p className="text-lg mt-2.5 mb-10 text-gray">
+        <p className="text-lg mt-2.5 mb-10 text-gray max-sm:text-sm max-sm:text-center">
           Here's what some of my satisfied clients have to say about my work
         </p>
       </div>
 
-      <p className="pb-7 border-b border-b-border text-grey text-xl font-medium">
+      <p className="pb-7 border-b border-b-border text-grey text-xl font-medium max-sm:text-sm">
         {reviews.length} Total Reviews
       </p>
       <div className="relative overflowShapes before:content-[''] before:absolute before:-right-24 before:top-0 before:h-full before:w-20 before:bg-bg before:z-2 after:content-[''] after:absolute after:-left-24 after:top-0 after:h-full after:w-20 after:bg-bg after:z-2">

@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  @apply transition-all duration-400 ease-out;
+  @apply transition-all duration-400 ease-out overflow-x-hidden;
   background-color: var(--color-bg);
 }
 
