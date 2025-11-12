@@ -95,12 +95,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="form-wrapper p-15 max-sm:p-6 bg-white rounded-lg">
+    <div className="form-wrapper p-15 max-[1025px]:p-10 max-sm:p-6 bg-white rounded-lg">
       <form onSubmit={sendEmail}>
         {/* Name Fields */}
-        <div className="row mb-5 max-sm:mb-4 flex justify-between max-sm:flex-col max-sm:gap-4">
+        <div className="row mb-5 max-sm:mb-4 flex justify-between max-sm:flex-col max-sm:gap-4 max-[1025px]:flex-col max-[1025px]:gap-4">
           <input
-            className="w-[48%] max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
+            className="w-[48%] max-[1025px]:w-full max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
             type="text"
             name="firstName"
             value={formData.firstName}
@@ -109,7 +109,7 @@ const ContactForm = () => {
             required
           />
           <input
-            className="w-[48%] max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
+            className="w-[48%] max-[1025px]:w-full max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
             type="text"
             name="lastName"
             value={formData.lastName}
@@ -120,13 +120,13 @@ const ContactForm = () => {
         </div>
 
         {/* Email & Phone */}
-        <div className="row mb-5 flex justify-between max-sm:flex-col max-sm:gap-4">
+        <div className="row mb-5 flex justify-between max-sm:flex-col max-sm:gap-4 max-[1025px]:flex-col max-[1025px]:gap-4">
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-[48%] max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
+            className="w-[48%] max-[1025px]:w-full max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
             placeholder="Email"
             required
           />
@@ -135,7 +135,7 @@ const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-[48%] max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
+            className="w-[48%] max-[1025px]:w-full max-sm:w-full px-7 max-sm:px-6 max-sm:py-4 py-3 border border-border rounded-lg bg-[#F5F3F0] placeholder:text-gray placeholder:text-lg text-lg max-sm:placeholder:text-sm max-sm:text-sm"
             placeholder="Phone Number"
             required
           />

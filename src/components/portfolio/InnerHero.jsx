@@ -17,7 +17,7 @@ const InnerHero = ({
             <img className="w-5" src={mainIcon} alt="Hero Icon" />
           </div>
         </div>
-        <h1 className="text-5xl text-center text-gray font-semibold mb-4 max-sm:text-[1.75rem]">
+        <h1 className="text-5xl text-center text-gray font-semibold mb-4 max-sm:text-[1.75rem] max-[1025px]:text-4xl">
           {title}
         </h1>
         <p className="text-lg text-grey text-center mb-8 max-sm:text-sm">
