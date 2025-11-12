@@ -3,13 +3,13 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="hero container-left flex items-center max-sm:flex-col-reverse max-sm:gap-7.5">
+    <section className="hero container-left flex items-center max-sm:flex-col-reverse max-sm:gap-7.5 max-[1025px]:pt-4 max-[1025px]:items-end!">
       <div className="col-1 w-[67%] max-sm:w-full">
         <div className="top pr-30 max-sm:pr-0 flex-start flex-col max-sm:justify-center max-sm:items-center!">
           <p className="text-xl max-sm:text-lg font-medium py-2.5 px-4.5 rounded-md bg-white w-fit mb-5 text-[#4D4D4D]">
             Hello There 🤗
           </p>
-          <h1 className="text-dark text-[3.625rem] max-sm:text-[2.375rem] font-semibold leading-tight max-sm:text-center">
+          <h1 className="text-dark text-[3.625rem] max-sm:text-[2.375rem] font-semibold leading-tight max-sm:text-center max-[1025px]:text-4xl">
             Jeffery Cannon Welcome's You!
           </h1>
           <p className="text-lg max-sm:text-sm max-sm:text-center mt-2.5 mb-10 max-sm:mb-6 text-gray">
@@ -34,25 +34,25 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="bottom flex max-sm:flex-wrap items-center bg-white py-10 px-12.5 mt-10 rounded-tl-xl rounded-bl-xl gap-7.5 max-sm:gap-2.5 max-sm:bg-transparent max-sm:py-0 max-sm:px-0">
-          <div className="counter w-[33.33%] max-sm:w-full max-sm:bg-white max-sm:rounded-lg p-4.5">
-            <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center">
+        <div className="bottom flex max-sm:flex-wrap items-center bg-white py-10 px-12.5 max-[1025px]:px-5 max-[1025px]:py-5 mt-10 rounded-tl-xl rounded-bl-xl gap-7.5 max-sm:gap-2.5 max-sm:bg-transparent max-sm:py-0 max-sm:px-0">
+          <div className="counter w-[33.33%] max-sm:w-full max-sm:bg-white max-sm:rounded-lg max-sm:p-4.5">
+            <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center max-[1025px]:text-3xl">
               55<span className="text-primary">+</span>
             </h2>
             <p className="text-lg max-sm:text-sm mt-2 text-gray font-medium max-sm:text-center">
               Completed Projects
             </p>
           </div>
-          <div className="counter w-[33.33%] max-sm:w-[48.5%] max-sm:bg-white max-sm:rounded-lg p-4.5">
-            <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center">
+          <div className="counter w-[33.33%] max-sm:w-[48.5%] max-sm:bg-white max-sm:rounded-lg max-sm:p-4.5">
+            <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center max-[1025px]:text-3xl">
               20<span className="text-primary">+</span>
             </h2>
             <p className="text-lg max-sm:text-sm mt-2 text-gray font-medium max-sm:text-center">
               Happy Customers
             </p>
           </div>
-          <div className="counter w-[33.33%] max-sm:w-[48.5%] max-sm:bg-white max-sm:rounded-lg p-4.5">
-            <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center">
+          <div className="counter w-[33.33%] max-sm:w-[48.5%] max-sm:bg-white max-sm:rounded-lg max-sm:p-4.5">
+            <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center max-[1025px]:text-3xl">
               08<span className="text-primary">+</span>
             </h2>
             <p className="text-lg max-sm:text-sm mt-2 text-gray font-medium max-sm:text-center">

@@ -119,7 +119,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bottom flex justify-between py-8 max-sm:flex-col max-sm:gap-1 max-sm:pt-2">
+      <div className="bottom flex justify-between py-8 max-sm:flex-col max-sm:gap-1 max-sm:pt-2 max-[1025px]:flex-col max-[1025px]:gap-1">
         <p className="text-light-grey text-lg max-sm:text-center max-sm:text-sm">
           Copyright © 2025 Mohsin Alam. All rights reserved.
         </p>

@@ -40,7 +40,7 @@ const Testimonials = () => {
   return (
     <section className="container bottom-padded testimonials overflowShapes relative">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-center max-sm:text-[1.75rem]">
+        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-center max-sm:text-[1.75rem] max-[1025px]:text-4xl">
           What My Clients Say About Me
         </h2>
         <p className="text-lg mt-2.5 mb-10 text-gray max-sm:text-sm max-sm:text-center">
@@ -65,7 +65,7 @@ const Testimonials = () => {
           breakpoints={{
             320: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1025: { slidesPerView: 3 },
           }}
           className="overflow-visible! mt-12.5"
         >

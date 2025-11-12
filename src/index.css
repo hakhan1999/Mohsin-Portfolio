@@ -15,7 +15,7 @@ html {
 }
 
 /* Mobile */
-@media (max-width: 390px) {
+@media (max-width: 600px) {
   html {
     font-size: 4.102564103vw;
   }
@@ -149,7 +149,7 @@ body {
 }
 
 /* Mobile Responsiveness  */
-@media (max-width: 390px) {
+@media screen and (min-width: 280px) and (max-width: 600px) {
   .container {
     @apply px-4;
   }
@@ -168,5 +168,28 @@ body {
 
   .container-left {
     @apply pl-4 pr-4;
+  }
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    @apply px-10;
+  }
+
+  .sec-padded {
+    @apply py-20;
+  }
+
+  .top-padded {
+    @apply pt-20;
+  }
+
+  .bottom-padded {
+    @apply pb-20;
+  }
+
+  .container-left {
+    @apply pl-10 pr-0;
   }
 }

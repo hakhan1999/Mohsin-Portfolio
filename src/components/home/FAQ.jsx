@@ -38,7 +38,7 @@ const FAQ = () => {
   return (
     <section className="container bottom-padded faq">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem] max-sm:text-center max-sm:leading-normal">
+        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem] max-sm:text-center max-sm:leading-normal max-[1025px]:text-4xl">
           Frequently Asked Questions
         </h2>
         <p className="text-lg mt-2.5 mb-10 text-gray max-sm:text-sm max-sm:text-center">
@@ -46,7 +46,7 @@ const FAQ = () => {
         </p>
       </div>
       <div className="accordion-wrapper flex-start justify-between max-sm:flex-col max-sm:gap-5">
-        <div className="w-[67.5%] max-sm:w-full p-12.5 rounded-xl bg-white flex flex-col gap-7.5 max-sm:gap-5 max-sm:p-5">
+        <div className="w-[67.5%] max-[1025px]:w-[57%] max-sm:w-full p-12.5 rounded-xl bg-white flex flex-col gap-7.5 max-sm:gap-5 max-sm:p-5">
           {faqs.map((item, index) => (
             <Accordion
               key={item.id}
@@ -57,7 +57,7 @@ const FAQ = () => {
           ))}
         </div>
         <Card
-          className="w-[30%] max-sm:w-full"
+          className="w-[30%] max-[1025px]:w-[40%] max-sm:w-full"
           icon="/images/star.svg"
           title="Still have any Questions ?"
           description="Lets collaborate to create an exceptional website that sets you apart from the competition. Contact me today to discuss your web design needs and bring your digital vision to life!"

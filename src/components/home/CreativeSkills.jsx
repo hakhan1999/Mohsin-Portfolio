@@ -49,7 +49,7 @@ const CreativeSkills = () => {
   return (
     <section className="container sec-padded creative-skills">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem]">
+        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem] max-[1025px]:text-4xl">
           Creative Skills
         </h2>
         <p className="text-lg mt-2.5 mb-10 text-gray max-sm:text-center max-sm:text-sm">
@@ -57,7 +57,7 @@ const CreativeSkills = () => {
           bring your web design visions to life
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-7.5 max-sm:grid-cols-1 max-sm:gap-5">
+      <div className="grid grid-cols-3 gap-7.5 max-sm:grid-cols-1 max-sm:gap-5 max-[1025px]:grid-cols-2">
         {skills.map((item) => (
           <Card
             key={item.id}
