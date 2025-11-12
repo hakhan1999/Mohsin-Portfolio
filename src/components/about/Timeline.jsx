@@ -94,7 +94,7 @@ export default function Timeline() {
   return (
     <section className="container pb-110 timeline-sec">
       <div className="sec-title flex-center flex-col">
-        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem]">
+        <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem] max-[1025px]:text-4xl">
           Milestones of My Career
         </h2>
         <p className="text-lg mt-2.5 mb-10 text-grey w-[70%] mx-auto text-center max-sm:text-center max-sm:text-sm max-sm:w-full">
@@ -125,7 +125,7 @@ export default function Timeline() {
                 </p>
                 <div className="p-12.5 max-sm:p-10 bg-white rounded-lg flex gap-7.5 max-sm:gap-6 max-sm:flex-col max-sm:justify-center max-sm:items-center! w-180 max-sm:w-full flex-start absolute top-20 left-1/2 -translate-x-1/2 after:block after:w-0 after:h-0 after:border-solid after:border-x-[11.5px] after:border-b-12 after:border-x-transparent after:border-b-white after:absolute after:-top-2 after:left-1/2 after:-translate-x-1/2">
                   <img
-                    className="max-sm:w-17.5"
+                    className="max-sm:w-17.5 max-[1025px]:w-16"
                     src={item.iconPath}
                     alt={`${item.year} Icon`}
                   />
@@ -144,7 +144,7 @@ export default function Timeline() {
             return (
               <div
                 key={item.id}
-                className={`relative flex gap-[9.3rem] max-sm:gap-18 py-20 max-sm:pb-10 max-sm:flex-col ${
+                className={`relative flex gap-[9.3rem] max-[1025px]:gap-27 max-sm:gap-18 py-20 max-sm:pb-10 max-sm:flex-col ${
                   index % 2 === 0 ? "" : "flex-row-reverse"
                 }`}
               >
@@ -153,7 +153,7 @@ export default function Timeline() {
                 </p>
 
                 <div
-                  className={`p-12.5 bg-white rounded-lg flex gap-7.5 max-sm:gap-6 w-[44%] max-sm:w-full relative max-sm:order-2 max-sm:p-10 max-sm:flex-col-reverse ${
+                  className={`p-12.5 max-[1025px]:p-7 bg-white rounded-lg flex gap-7.5 max-[1025px]:gap-5 max-sm:gap-6 w-[44%] max-sm:w-full relative max-sm:order-2 max-sm:p-10 max-sm:flex-col-reverse ${
                     index % 2 === 0 ? "" : "flex-row-reverse"
                   } ${
                     index % 2 === 0
@@ -170,7 +170,7 @@ export default function Timeline() {
                   </p>
 
                   <img
-                    className="max-sm:w-17.5"
+                    className="max-sm:w-17.5 max-[1025px]:w-16"
                     src={item.iconPath}
                     alt={`${item.year} Icon`}
                   />
