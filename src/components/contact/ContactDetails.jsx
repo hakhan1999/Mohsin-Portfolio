@@ -73,7 +73,7 @@ const ContactDetails = () => {
                       transition: "filter 0.3s ease",
                     }}
                   />
-                  <style jsx>{`
+                  <style>{`
                     .group:hover img {
                       filter: brightness(0) saturate(100%) invert(100%)
                         sepia(4%) saturate(0%) hue-rotate(284deg)

@@ -26,19 +26,31 @@ const InnerHero = ({
         <div className="middle flex justify-center">
           <div className="contactLinksWrapper flex justify-center gap-5 max-sm:gap-3.5 max-sm:flex-col max-sm:w-full">
             <div className="flex gap-[0.478rem] relative py-[0.969rem] px-4 border border-border rounded-lg max-sm:w-full max-sm:justify-center">
-              <img src={icon1} className="max-sm:w-5" alt="Hero List Icon" />
+              <img
+                src={icon1}
+                className="w-7 max-sm:w-5"
+                alt="Hero List Icon"
+              />
               <span className="font-medium text-lg text-gray max-sm:text-sm">
                 {list1}
               </span>
             </div>
             <div className="flex gap-[0.478rem] relative py-[0.969rem] px-4 border border-border rounded-lg max-sm:w-full max-sm:justify-center">
-              <img src={icon2} className="max-sm:w-5" alt="Hero List Icon" />
+              <img
+                src={icon2}
+                className="w-7 max-sm:w-5"
+                alt="Hero List Icon"
+              />
               <span className="font-medium text-lg text-gray max-sm:text-sm">
                 {list2}
               </span>
             </div>
             <div className="flex gap-[0.478rem] relative py-[0.969rem] px-4 border border-border rounded-lg max-sm:w-full max-sm:justify-center">
-              <img src={icon3} className="max-sm:w-5" alt="Hero List Icon" />
+              <img
+                src={icon3}
+                className="w-7 max-sm:w-5"
+                alt="Hero List Icon"
+              />
               <span className="font-medium text-lg text-gray max-sm:text-sm">
                 {list3}
               </span>
