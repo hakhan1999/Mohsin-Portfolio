@@ -70,7 +70,7 @@ const Footer = () => {
           className="text-primary text-2xl font-semibold max-sm:text-lg max-sm:mb-5 max-sm:order-1"
           to="/"
         >
-          Jeffery Cannon.
+          Mohsin Alam.
         </NavLink>
         <ul className="flex gap-7.5 max-sm:gap-5 max-sm:order-3">
           {navItems.map((item) => (

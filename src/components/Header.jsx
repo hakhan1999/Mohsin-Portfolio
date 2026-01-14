@@ -25,7 +25,7 @@ const Header = () => {
           className="text-primary text-2xl max-sm:text-lg font-semibold"
           to="/"
         >
-          Jeffery Cannon.
+          Mohsin Alam.
         </NavLink>
       </div>
 
