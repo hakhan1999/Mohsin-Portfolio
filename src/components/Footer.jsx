@@ -44,21 +44,21 @@ const socialLinks = [
 const contactLinks = [
   {
     id: 1,
-    text: "jefferycannon@gmail.com",
+    text: "mohsinbest57@gmail.com",
     iconPath: "/images/email.svg",
-    link: "mailto:jefferycannon@gmail.com",
+    link: "mailto:mohsinbest57@gmail.com",
   },
   {
     id: 2,
-    text: "+91 91813 23 2309",
+    text: "+92 347 2436 445",
     iconPath: "/images/phone-blue.svg",
-    link: "tel:+91 91813 23 2309",
+    link: "tel:+92 347 2436 445",
   },
   {
     id: 3,
-    text: "Somewhere in the World",
+    text: "Karachi, Pakistan",
     iconPath: "/images/location.svg",
-    link: "/location",
+    link: "#",
   },
 ];
 
@@ -120,11 +120,12 @@ const Footer = () => {
       </div>
 
       <div className="bottom flex justify-between py-8 max-sm:flex-col max-sm:gap-1 max-sm:pt-2 max-[1025px]:flex-col max-[1025px]:gap-1">
-        <p className="text-light-grey text-lg max-sm:text-center max-sm:text-sm">
+        <p className="text-gray text-lg max-sm:text-center max-sm:text-sm">
           Copyright © 2025 Mohsin Alam. All rights reserved.
         </p>
-        <p className="text-light-grey text-lg max-sm:text-center max-sm:text-sm">
-          Designed with ❤ by Me and Developed By{" "}
+        <p className="text-gray text-lg max-sm:text-center max-sm:text-sm">
+          Designed with <span className="text-red-600">❤</span> by Me and
+          Developed By{" "}
           <NavLink
             className="text-gray underline"
             to="https://www.linkedin.com/in/hassan-ahmed-khan-533772233/"

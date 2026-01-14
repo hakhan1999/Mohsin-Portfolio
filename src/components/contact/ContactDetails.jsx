@@ -3,21 +3,21 @@ import ContactForm from "./ContactForm";
 const contactDetails = [
   {
     id: 1,
-    mainText: "jefferycannon@gmail.com",
+    mainText: "mohsinbest57@gmail.com",
     subText: "You can email me here",
-    link: "mailto:jefferycannon@gmail.com",
+    link: "mailto:mohsinbest57@gmail.com",
   },
   {
     id: 2,
-    mainText: "+91 91813 23 2309",
+    mainText: "+92 347 2436 445",
     subText: "Give me a call on",
-    link: "tel:+91 91813 23 2309",
+    link: "tel:+92 347 2436 445",
   },
   {
     id: 3,
-    mainText: "Somewhere in the World",
+    mainText: "Karachi, Pakistan",
     subText: "Location",
-    link: "/location",
+    link: "#",
   },
 ];
 

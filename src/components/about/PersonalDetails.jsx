@@ -3,10 +3,7 @@ const PersonalDetails = () => {
     <section className="about-section container bottom-padded pt-15 max-sm:pt-0 flex justify-between max-sm:flex-col max-sm:gap-7.5">
       <div className="col-1 w-[45%] max-sm:w-full">
         <picture>
-          <source
-            srcSet="/images/aboutImageMobile.webp"
-            media="(max-width: 767px)"
-          />
+          <source srcSet="/images/aboutImage.webp" media="(max-width: 767px)" />
           <source srcSet="/images/aboutImage.webp" media="(min-width: 768px)" />
           <img
             className="w-full"

@@ -63,10 +63,7 @@ const Hero = () => {
       </div>
       <div className="col-2 w-[40%] max-sm:w-full">
         <picture>
-          <source
-            srcSet="/images/heroImageMobile.webp"
-            media="(max-width: 767px)"
-          />
+          <source srcSet="/images/heroImage.webp" media="(max-width: 767px)" />
           <source srcSet="/images/heroImage.webp" media="(min-width: 768px)" />
           <img
             className="w-full"
