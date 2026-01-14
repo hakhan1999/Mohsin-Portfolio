@@ -10,7 +10,7 @@ const Hero = () => {
             Hello There 🤗
           </p>
           <h1 className="text-dark text-[3.625rem] max-sm:text-[2.375rem] font-semibold leading-tight max-sm:text-center max-[1025px]:text-4xl">
-            Moshin Alam Welcome's You!
+            Mohsin Alam Welcome's You!
           </h1>
           <p className="text-lg max-sm:text-sm max-sm:text-center mt-2.5 mb-10 max-sm:mb-6 text-gray">
             I am a passionate and experienced web designer, dedicated to
