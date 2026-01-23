@@ -27,13 +27,9 @@ const socialLinks = [
     link: "#",
     imgLink: "/images/linkedIn.svg",
   },
+
   {
     id: 2,
-    link: "#",
-    imgLink: "/images/twitter.svg",
-  },
-  {
-    id: 3,
     link: "#",
     imgLink: "/images/dribble.svg",
   },

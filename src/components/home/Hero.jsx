@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="bottom flex max-sm:flex-wrap items-center bg-white py-10 px-12.5 max-[1025px]:px-5 max-[1025px]:py-5 mt-10 rounded-tl-xl rounded-bl-xl gap-7.5 max-sm:gap-2.5 max-sm:bg-transparent max-sm:py-0 max-sm:px-0">
           <div className="counter w-[33.33%] max-sm:w-full max-sm:bg-white max-sm:rounded-lg max-sm:p-4.5">
             <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center max-[1025px]:text-3xl">
-              55<span className="text-primary">+</span>
+              50<span className="text-primary">+</span>
             </h2>
             <p className="text-lg max-sm:text-sm mt-2 text-gray font-medium max-sm:text-center">
               Completed Projects
@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
           <div className="counter w-[33.33%] max-sm:w-[48.5%] max-sm:bg-white max-sm:rounded-lg max-sm:p-4.5">
             <h2 className="text-5xl font-bold max-sm:text-2xl max-sm:text-center max-[1025px]:text-3xl">
-              08<span className="text-primary">+</span>
+              05<span className="text-primary">+</span>
             </h2>
             <p className="text-lg max-sm:text-sm mt-2 text-gray font-medium max-sm:text-center">
               Years of Experience

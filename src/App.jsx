@@ -14,6 +14,9 @@ const App = () => {
       smoothTouch: false,
     });
 
+    // expose globally so components can access it
+    window.lenis = lenis;
+
     const raf = (time) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -23,6 +26,7 @@ const App = () => {
 
     return () => {
       lenis.destroy();
+      window.lenis = null;
     };
   }, []);
 

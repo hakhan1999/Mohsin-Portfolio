@@ -57,30 +57,34 @@ const timelineData = [
 ];
 
 export default function Timeline() {
-  const [scrollPercent, setScrollPercent] = useState(0);
   const timelineRef = useRef(null);
+  const [scrollPercent, setScrollPercent] = useState(0);
 
-  // Track scroll progress within the timeline section
   useEffect(() => {
-    const handleScroll = () => {
-      const section = timelineRef.current;
-      if (!section) return;
-      const rect = section.getBoundingClientRect();
-      const scrollTop = window.scrollY;
-      const sectionTop = scrollTop + rect.top;
-      const sectionHeight = section.offsetHeight;
+    if (!window.lenis) return;
+
+    const section = timelineRef.current;
+    if (!section) return;
+
+    // Get the absolute top of the section
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    const onScroll = ({ scroll }) => {
+      // scroll is the Lenis scroll value (top of page)
       const progress =
-        ((scrollTop - sectionTop + window.innerHeight / 2) / sectionHeight) *
-        100;
+        ((scroll + window.innerHeight / 2 - sectionTop) / sectionHeight) * 100;
       setScrollPercent(Math.min(Math.max(progress, 0), 100));
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    window.lenis.on("scroll", onScroll);
+
+    return () => {
+      window.lenis.off("scroll", onScroll);
+    };
   }, []);
 
   const segmentHeight = 100 / (timelineData.length - 1);
-
-  // We subtract half a segment to delay the color change
   const currentIndex = Math.min(
     timelineData.length - 1,
     Math.max(
@@ -88,7 +92,6 @@ export default function Timeline() {
       Math.floor((scrollPercent - segmentHeight * 0.5) / segmentHeight),
     ),
   );
-
   const currentColor = timelineData[currentIndex]?.color || "#8B5CF6";
 
   return (

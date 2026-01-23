@@ -32,11 +32,6 @@ const socialLinks = [
   {
     id: 2,
     link: "#",
-    imgLink: "/images/twitter.svg",
-  },
-  {
-    id: 3,
-    link: "#",
     imgLink: "/images/dribble.svg",
   },
 ];

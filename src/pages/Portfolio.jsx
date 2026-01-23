@@ -68,9 +68,9 @@ const Portfolio = () => {
         icon1="/images/projects.svg"
         icon2="/images/customers.svg"
         icon3="/images/experience.svg"
-        list1="55+ Completed Projects"
+        list1="50+ Completed Projects"
         list2="20+ Happy Customers"
-        list3="08+ Years of Experience"
+        list3="05+ Years of Experience"
       />
       <Works
         title="My Works"
