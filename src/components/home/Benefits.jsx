@@ -3,15 +3,15 @@ import Card from "./Card";
 const benefits = [
   {
     id: 1,
-    title: "Customized Designs Tailored to Your Brand",
+    title: "Customized Designs Aligned with Your Brand",
     description:
-      "I understand the importance of creating a unique and memorable brand identity. By collaborating closely with you, I ensure that your website reflects your brand's personality, values, and objectives. The result is a customized design that sets you apart from the competition and resonates with your target audience.",
+      "I create tailored visual and UI/UX solutions that reflect your brand’s identity, values, and goals. Through close collaboration, every design is crafted to feel authentic, consistent, and memorable—helping you stand out and connect with your audience.",
   },
   {
     id: 2,
-    title: "Creative Excellence that Captivates Visitors",
+    title: "Creative Excellence with User-Centered Thinking",
     description:
-      "With a keen eye for aesthetics and a passion for creativity, I excel in designing visually stunning and engaging websites. By combining beautiful visuals, captivating typography, and strategic use of color, I create an immersive and impactful user experience. Your website will leave a lasting impression on visitors, enhancing your brand's credibility and professionalism.",
+      "Blending strong visual aesthetics with intuitive user experience, I design interfaces and graphics that are both engaging and functional. From typography and color to layout and interaction, every detail is designed to create impact, build credibility, and deliver a seamless user journey.",
   },
   {
     id: 3,
@@ -27,9 +27,9 @@ const benefits = [
   },
   {
     id: 5,
-    title: "Expertise in Cutting-Edge Technologies",
+    title: "Expertise in Visual Design",
     description:
-      "With a strong command of HTML, CSS, JavaScript, and other front-end technologies, I possess the technical skills to bring your design concepts to life. From seamless animations to interactive elements, I leverage the latest web technologies to enhance user engagement and create a dynamic user experience.",
+      "With strong proficiency in graphic design tools and techniques, I bring creative concepts to life through striking visuals. From seamless layouts to compelling illustrations, I leverage the latest design trends and tools to elevate brand identity and engage audiences with a dynamic, memorable visual experience.",
   },
 ];
 
@@ -41,7 +41,8 @@ const Benefits = () => {
           Benefits
         </h2>
         <p className="text-lg mt-2.5 mb-10 text-gray max-sm:text-sm max-sm:text-center">
-          By choosing my web design service, you'll enjoy the following benefits
+          By choosing my design services, you gain thoughtful visuals and
+          user-focused experiences that elevate your brand.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-7.5 mb-7.5 max-sm:grid-cols-1 max-sm:gap-5">

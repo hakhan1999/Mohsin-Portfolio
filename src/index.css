@@ -2,19 +2,37 @@
 @import "tailwindcss";
 
 /* Font Scalability */
-html {
+/* html {
   @apply scroll-smooth overflow-x-hidden;
   font-size: 1.1vw;
-}
+} */
 
 /* Tablet */
+/* @media (max-width: 1024px) {
+  html {
+    font-size: 1.5625vw;
+  }
+} */
+
+/* Mobile */
+/* @media (max-width: 600px) {
+  html {
+    font-size: 4.102564103vw;
+  }
+} */
+
+html {
+  font-size: 0.9027777778vw;
+  @apply overflow-x-hidden;
+}
+
+/* Font Scalablitiy  */
 @media (max-width: 1024px) {
   html {
     font-size: 1.5625vw;
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   html {
     font-size: 4.102564103vw;

@@ -63,6 +63,9 @@ const contactLinks = [
 ];
 
 const Footer = () => {
+  // Get Current Year
+  const date = new Date();
+  let year = date.getFullYear();
   return (
     <footer className="footer container border-t border-t-border">
       <div className="top flex justify-between pt-10 max-sm:pt-7.5 pb-5 max-sm:flex-col">
@@ -121,7 +124,7 @@ const Footer = () => {
 
       <div className="bottom flex justify-between py-8 max-sm:flex-col max-sm:gap-1 max-sm:pt-2 max-[1025px]:flex-col max-[1025px]:gap-1">
         <p className="text-gray text-lg max-sm:text-center max-sm:text-sm">
-          Copyright © 2025 Mohsin Alam. All rights reserved.
+          Copyright © {year} Mohsin Alam. All rights reserved.
         </p>
         <p className="text-gray text-lg max-sm:text-center max-sm:text-sm">
           Designed with <span className="text-red-600">❤</span> by Me and

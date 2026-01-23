@@ -4,33 +4,39 @@ import Card from "./Card";
 const faqs = [
   {
     id: 1,
-    title: "Can you work with clients remotely?",
+    title: "What is your design process for UI/UX projects?",
     description:
-      "Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location.",
+      "My design process begins with user research and understanding the project goals. I then create wireframes and prototypes, followed by user testing and iterative design improvements. I prioritize user needs, ensuring the final product is both intuitive and visually appealing.",
   },
   {
     id: 2,
-    title: "How long does it typically take to complete a web design project?",
+    title: "Do you conduct user research and testing?",
     description:
-      "Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location.",
+      "Yes, user research and testing are integral parts of my process. I conduct user interviews, surveys, and usability testing to ensure the design aligns with the target audience’s needs and expectations, leading to a more effective user experience.",
   },
   {
     id: 3,
-    title: "Do you offer website maintenance services?",
+    title: "How do you ensure mobile responsiveness in your designs?",
     description:
-      "Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location.",
+      "I design with mobile-first principles in mind, ensuring that all layouts and elements are fully responsive across all devices. I conduct thorough testing on various screen sizes and browsers to guarantee a seamless experience for every user.",
   },
   {
     id: 4,
-    title: "Can you optimize my website for search engines?",
+    title: "How do you approach accessibility in your designs?",
     description:
-      "Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location.",
+      "I follow WCAG (Web Content Accessibility Guidelines) to ensure that my designs are accessible to all users, including those with disabilities. This includes designing for screen readers, keyboard navigation, and using sufficient color contrast for readability.",
   },
   {
     id: 5,
-    title: "Can you integrate third-party tools or platforms into my website?",
+    title: "Can you redesign my existing website or app?",
     description:
-      "Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location.",
+      "Absolutely! I specialize in redesigning existing websites and apps to enhance user experience, improve usability, and modernize the interface. I focus on creating a visually appealing and user-friendly design while keeping the core functionality intact.",
+  },
+  {
+    id: 6,
+    title: "Do you collaborate with developers during the design process?",
+    description:
+      "Yes, I work closely with developers to ensure the design is feasible and optimized for implementation. I provide detailed design specifications, assets, and support during the development phase to ensure a seamless transition from design to code.",
   },
 ];
 

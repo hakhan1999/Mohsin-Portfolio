@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="col-1 w-[67%] max-sm:w-full">
         <div className="top pr-30 max-sm:pr-0 flex-start flex-col max-sm:justify-center max-sm:items-center!">
           <p className="text-xl max-sm:text-lg font-medium py-2.5 px-4.5 rounded-md bg-white w-fit mb-5 text-[#4D4D4D]">
-            Hello There 🤗
+            Hello There
           </p>
           <h1 className="text-dark text-[3.625rem] max-sm:text-[2.375rem] font-semibold leading-tight max-sm:text-center max-[1025px]:text-4xl">
             Mohsin Alam Welcome's You!

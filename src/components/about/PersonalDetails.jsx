@@ -18,17 +18,13 @@ const PersonalDetails = () => {
             Welcome to the world of captivating web design!
           </p>
           <h1 className="text-dark text-[3.2rem] font-semibold leading-tight max-sm:text-[2.375rem] max-sm:text-center max-[1025px]:text-4xl">
-            I'm Jeffery Cannon
+            I'm Mohsin Alam
           </h1>
           <p className="text-lg mt-2.5 mb-10 text-grey max-sm:text-center max-sm:text-sm">
-            A skilled web designer with a passion for creating visually stunning
-            and user-friendly websites. With a keen eye for detail and a
-            commitment to excellence, I specialize in crafting online
-            experiences that leave a lasting impression. From concept to launch,
-            I collaborate closely with clients to bring their visions to life
-            and ensure their digital presence stands out from the crowd. With my
-            expertise and dedication, I am here to help you elevate your online
-            presence and make a powerful impact in the digital landscape.
+            I design clean, intuitive, and user-focused digital experiences. By
+            blending visual design with usability and strategy, I create
+            interfaces that feel modern, functional, and engaging, helping
+            products connect meaningfully with users.
           </p>
         </div>
         <div className="bottom flex items-center border-b border-t border-primary py-10 mt-10 gap-12.5 max-sm:gap-10 max-sm:border-b-0 max-sm:border-t-0 max-sm:flex-col max-sm:bg-white max-sm:rounded-[10px] max-sm:px-7.5">

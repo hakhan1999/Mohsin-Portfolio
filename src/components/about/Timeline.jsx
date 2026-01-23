@@ -6,52 +6,52 @@ const timelineData = [
     year: "Now",
     title: "Expanding Horizons",
     description:
-      "Expanding Horizons Continuing on my path of growth and exploration, I expanded my skill set by delving into emerging technologies and design trends.",
+      "Fueled by curiosity and passion for design, I expanded my expertise by exploring modern UI/UX practices and emerging trends, focusing on creating intuitive and scalable digital experiences that evolve with user needs and industry innovation",
     iconPath: "/images/now.svg",
     color: "#9E00FF",
   },
   {
     id: 2,
-    year: "2022",
-    title: "A Collaborative Partnership",
+    year: "2025",
+    title: "Scalable & Strategic Design",
     description:
-      "I formed a strategic partnership with a digital marketing agency, combining my web design expertise with their marketing process.",
+      "Focused on building scalable UI/UX solutions, aligning design with business goals, and delivering consistent, high-quality digital experiences across platforms.",
     iconPath: "/images/2022.svg",
     color: "#5EDC11",
   },
   {
     id: 3,
-    year: "2021",
-    title: " Entrepreneurial Pursuits",
+    year: "2024",
+    title: "User-Centered Design Practice",
     description:
-      "Entrepreneurial Pursuits Fueled by a desire for creative freedom and the opportunity to work with diverse clients, I decided to venture into freelancing.",
+      "Deepened my UI/UX expertise by designing intuitive user experiences, improving interaction design, and working closely with stakeholders to solve real user problems.",
     iconPath: "/images/2021.svg",
     color: "#FFCE22",
   },
   {
     id: 4,
-    year: "2020",
-    title: "A Corporate Adventure",
+    year: "2023",
+    title: "Transition to UI/UX Design",
     description:
-      "I joined a leading technology company as their in-house web designer. This experience allowed me to work on large-scale projects.",
+      "Moved into UI/UX design, combining visual design experience with usability principles. Focused on interface design, user flows, and responsive layouts for digital products.",
     iconPath: "/images/2020.svg",
     color: "#FF7222",
   },
   {
     id: 5,
-    year: "2019",
-    title: "Learning and Growing",
+    year: "2022",
+    title: "Skill Growth & Creative Exploration",
     description:
-      "I had the opportunity to work with an innovative design agency, where I honed my skills and expanded my knowledge. Collaborating with talent.",
+      "Expanded my graphic design expertise by working on diverse projects, strengthening branding skills, and refining visual storytelling through collaboration with teams and clients.",
     iconPath: "/images/2019.svg",
     color: "#FF22E9",
   },
   {
     id: 6,
-    year: "2018",
-    title: "A World of Possibilities In 2018",
+    year: "2021",
+    title: "Graphic Design Foundations",
     description:
-      "I embarked on an exhilarating journey into the world of web design. Fueled by a deep passion for creativity and technology, I took my first steps into this dynamic field.",
+      "Began my journey as a graphic designer, learning the fundamentals of visual communication, typography, color theory, and layout design while working on creative brand assets.",
     iconPath: "/images/2018.svg",
   },
 ];
@@ -85,8 +85,8 @@ export default function Timeline() {
     timelineData.length - 1,
     Math.max(
       0,
-      Math.floor((scrollPercent - segmentHeight * 0.5) / segmentHeight)
-    )
+      Math.floor((scrollPercent - segmentHeight * 0.5) / segmentHeight),
+    ),
   );
 
   const currentColor = timelineData[currentIndex]?.color || "#8B5CF6";
@@ -98,9 +98,8 @@ export default function Timeline() {
           Milestones of My Career
         </h2>
         <p className="text-lg mt-2.5 mb-10 text-grey w-[70%] mx-auto text-center max-sm:text-center max-sm:text-sm max-sm:w-full">
-          Lorem ipsum dolor sit amet consectetur. Nisl ut neque tortor nulla
-          felis nunc. Sit ac sed sed pulvinar sit purus morbi. Elit amet sed
-          velit auctor urna vitae nam ultricies massa.
+          A journey of continuous learning, creative problem-solving, and
+          user-focused design growth.
         </p>
       </div>
       <div ref={timelineRef} className="relative flex flex-col items-center">

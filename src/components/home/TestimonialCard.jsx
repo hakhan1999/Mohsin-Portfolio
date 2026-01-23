@@ -23,7 +23,7 @@ const TestimonialCard = ({ name, description, product }) => {
         ))}
       </div>
 
-      <p className="text-[1rem] leading-normal text-gray min-h-72 max-sm:text-sm max-sm:min-h-60">
+      <p className="text-[1rem] leading-normal text-gray min-h-50 max-sm:text-sm max-sm:min-h-55">
         {description}
       </p>
     </div>
