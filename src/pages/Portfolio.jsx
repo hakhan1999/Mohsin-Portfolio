@@ -4,10 +4,11 @@ import InnerHero from "../components/portfolio/InnerHero";
 const innerWorks = [
   {
     id: 1,
-    name: "90 Pound Site",
-    imagePath: "/images/90poundsite.webp",
-    link: "https://90poundsite.com/",
+    name: "VibeFX",
+    imagePath: "/images/vibefx.webp",
+    link: "https://vibefx.ca/",
   },
+
   {
     id: 2,
     name: "Abdul Latif Jameel Machinery",
@@ -70,9 +71,9 @@ const innerWorks = [
   },
   {
     id: 12,
-    name: "VibeFX",
-    imagePath: "/images/vibefx.webp",
-    link: "https://vibefx.ca/",
+    name: "90 Pound Site",
+    imagePath: "/images/90poundsite.webp",
+    link: "https://90poundsite.com/",
   },
 ];
 
