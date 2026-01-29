@@ -8,21 +8,21 @@ import Works from "../components/home/Works";
 const works = [
   {
     id: 1,
-    name: "Z - Aura Perfume Website Design",
-    imagePath: "/images/worksImage-1.webp",
-    link: "#",
+    name: "90 Pound Site",
+    imagePath: "/images/90poundsite.webp",
+    link: "https://90poundsite.com/",
   },
   {
     id: 2,
-    name: "Forhelp Charity Website Design",
-    imagePath: "/images/worksImage-2.webp",
-    link: "#",
+    name: "Abdul Latif Jameel Machinery",
+    imagePath: "/images/alj-machinery.webp",
+    link: "https://aljmachinery.com/",
   },
   {
     id: 3,
-    name: "Skill Bridge Website Design",
-    imagePath: "/images/worksImage-3.webp",
-    link: "#",
+    name: "Arteyo",
+    imagePath: "/images/arteyo.webp",
+    link: "https://arteyo.com/",
   },
 ];
 

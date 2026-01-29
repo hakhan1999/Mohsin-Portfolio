@@ -30,7 +30,7 @@ const PersonalDetails = () => {
         <div className="bottom flex items-center border-b border-t border-primary py-10 mt-10 gap-12.5 max-sm:gap-10 max-sm:border-b-0 max-sm:border-t-0 max-sm:flex-col max-sm:bg-white max-sm:rounded-[10px] max-sm:px-7.5">
           <div className="counter w-[33.33%] max-sm:w-full max-sm:flex max-sm:justify-center max-sm:gap-7.5 max-sm:items-center max-sm:border-b max-sm:border-b-border max-sm:pb-7.5">
             <h2 className="text-5xl font-bold max-[1025px]:text-4xl">
-              55<span className="text-primary">+</span>
+              50<span className="text-primary">+</span>
             </h2>
             <p className="text-lg mt-2 text-grey font-medium max-sm:text-sm">
               Completed Projects
@@ -46,7 +46,7 @@ const PersonalDetails = () => {
           </div>
           <div className="counter w-[33.33%] max-sm:w-full max-sm:flex max-sm:justify-center max-sm:gap-7.5 max-sm:items-center">
             <h2 className="text-5xl font-bold max-[1025px]:text-4xl">
-              08<span className="text-primary">+</span>
+              05<span className="text-primary">+</span>
             </h2>
             <p className="text-lg mt-2 text-grey font-medium max-sm:text-sm">
               Years of Experience

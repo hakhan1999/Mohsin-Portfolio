@@ -27,6 +27,7 @@ const Works = ({
             name={item.name}
             imagePath={item.imagePath}
             className={index === arr.length - 1 ? "max-[1025px]:hidden" : ""}
+            link={item.link}
           />
         ))}
       </div>
