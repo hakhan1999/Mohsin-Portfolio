@@ -8,9 +8,9 @@ import Works from "../components/home/Works";
 const works = [
   {
     id: 1,
-    name: "90 Pound Site",
-    imagePath: "/images/90poundsite.webp",
-    link: "https://90poundsite.com/",
+    name: "Vibe FX",
+    imagePath: "/images/vibefx.webp",
+    link: "https://vibefx.ca/",
   },
   {
     id: 2,
