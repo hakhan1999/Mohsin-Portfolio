@@ -57,34 +57,34 @@ const timelineData = [
 ];
 
 export default function Timeline() {
-  const timelineRef = useRef(null);
   const [scrollPercent, setScrollPercent] = useState(0);
+  const timelineRef = useRef(null);
 
+  // Track scroll progress within the timeline section
   useEffect(() => {
-    if (!window.lenis) return;
+    const handleScroll = () => {
+      const section = timelineRef.current;
+      if (!section) return;
 
-    const section = timelineRef.current;
-    if (!section) return;
+      const rect = section.getBoundingClientRect();
+      const scrollTop = window.scrollY;
+      const sectionTop = scrollTop + rect.top;
+      const sectionHeight = section.offsetHeight;
 
-    // Get the absolute top of the section
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-
-    const onScroll = ({ scroll }) => {
-      // scroll is the Lenis scroll value (top of page)
       const progress =
-        ((scroll + window.innerHeight / 2 - sectionTop) / sectionHeight) * 100;
+        ((scrollTop - sectionTop + window.innerHeight / 2) / sectionHeight) *
+        100;
+
       setScrollPercent(Math.min(Math.max(progress, 0), 100));
     };
 
-    window.lenis.on("scroll", onScroll);
-
-    return () => {
-      window.lenis.off("scroll", onScroll);
-    };
+    handleScroll(); // initial call
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const segmentHeight = 100 / (timelineData.length - 1);
+
   const currentIndex = Math.min(
     timelineData.length - 1,
     Math.max(
@@ -92,22 +92,26 @@ export default function Timeline() {
       Math.floor((scrollPercent - segmentHeight * 0.5) / segmentHeight),
     ),
   );
+
   const currentColor = timelineData[currentIndex]?.color || "#8B5CF6";
 
   return (
     <section className="container pb-110 timeline-sec">
+      {/* Header */}
       <div className="sec-title flex-center flex-col">
         <h2 className="text-5xl text-gray font-semibold mb-1.5 max-sm:text-[1.75rem] max-[1025px]:text-4xl">
           Milestones of My Career
         </h2>
-        <p className="text-lg mt-2.5 mb-10 text-grey w-[70%] mx-auto text-center max-sm:text-center max-sm:text-sm max-sm:w-full">
+        <p className="text-lg mt-2.5 mb-10 text-grey w-[70%] mx-auto text-center max-sm:text-sm max-sm:w-full">
           A journey of continuous learning, creative problem-solving, and
           user-focused design growth.
         </p>
       </div>
+
+      {/* Timeline */}
       <div ref={timelineRef} className="relative flex flex-col items-center">
-        {/* Central vertical line */}
-        <div className="absolute left-1/2 top-0 w-0.5 bg-[#DDCCFF] h-full -translate-x-1/2 overflow-hidden">
+        {/* Central Line */}
+        <div className="absolute left-1/2 top-0 w-0.5 h-full -translate-x-1/2 bg-[#DDCCFF]">
           <div
             className="absolute left-0 top-0 w-full transition-all duration-500 ease-out"
             style={{
@@ -117,84 +121,86 @@ export default function Timeline() {
           />
         </div>
 
-        {/* Timeline items */}
+        {/* Items */}
         {timelineData.map((item, index) => {
-          if (index === timelineData.length - 1) {
+          const isEven = index % 2 === 0;
+          const isLast = index === timelineData.length - 1;
+
+          if (isLast) {
             return (
               <div key={item.id} className="relative w-full">
-                <p className="absolute top-0 left-1/2 -translate-x-1/2 text-lg text-gray py-2 px-6 rounded-lg bg-white font-medium after:content-[''] ">
+                <p className="absolute top-0 left-1/2 -translate-x-1/2 text-lg text-gray py-2 px-6 rounded-lg bg-white font-medium">
                   {item.year}
                 </p>
-                <div className="p-12.5 max-sm:p-10 bg-white rounded-lg flex gap-7.5 max-sm:gap-6 max-sm:flex-col max-sm:justify-center max-sm:items-center! w-180 max-sm:w-full flex-start absolute top-20 left-1/2 -translate-x-1/2 after:block after:w-0 after:h-0 after:border-solid after:border-x-[11.5px] after:border-b-12 after:border-x-transparent after:border-b-white after:absolute after:-top-2 after:left-1/2 after:-translate-x-1/2">
+
+                <div className="absolute top-20 left-1/2 -translate-x-1/2 w-180 max-sm:w-full bg-white rounded-lg p-12.5 max-sm:p-10 flex gap-7.5 max-sm:flex-col max-sm:items-center">
                   <img
                     className="max-sm:w-17.5 max-[1025px]:w-16"
                     src={item.iconPath}
-                    alt={`${item.year} Icon`}
+                    alt={`${item.year} icon`}
                   />
-                  <div className="flex flex-col items-start">
-                    <p className="text-lg text-gray font-semibold mb-2 text- w-full max-sm:text-[1rem] max-sm:text-center">
+
+                  <div>
+                    <p className="text-lg text-gray font-semibold mb-2 max-sm:text-center">
                       {item.title}
                     </p>
-                    <p className="text-gray text-lg text-left max-sm:text-center max-sm:text-sm max-sm:leading-normal">
+                    <p className="text-gray text-lg max-sm:text-sm max-sm:text-center">
                       {item.description}
                     </p>
                   </div>
                 </div>
               </div>
             );
-          } else {
-            return (
+          }
+
+          return (
+            <div
+              key={item.id}
+              className={`relative flex py-20 gap-[9.3rem] max-sm:flex-col max-sm:gap-18 ${
+                isEven ? "" : "flex-row-reverse"
+              }`}
+            >
+              {/* Year */}
+              <p className="absolute top-0 left-1/2 -translate-x-1/2 text-lg text-gray py-2 px-6 rounded-lg bg-white font-medium">
+                {item.year}
+              </p>
+
+              {/* Card */}
               <div
-                key={item.id}
-                className={`relative flex gap-[9.3rem] max-[1025px]:gap-27 max-sm:gap-18 py-20 max-sm:pb-10 max-sm:flex-col ${
-                  index % 2 === 0 ? "" : "flex-row-reverse"
+                className={`relative w-[44%] max-sm:w-full bg-white rounded-lg p-12.5 max-sm:p-10 flex gap-7.5 max-sm:flex-col-reverse ${
+                  isEven ? "" : "flex-row-reverse"
                 }`}
               >
-                <p className="absolute top-0 left-1/2 -translate-x-1/2 text-lg text-gray py-2 px-6 rounded-lg bg-white font-medium max-sm:text-[1rem]">
-                  {item.year}
+                <p className="text-gray text-lg max-sm:text-sm max-sm:text-center">
+                  {item.description}
                 </p>
 
-                <div
-                  className={`p-12.5 max-[1025px]:p-7 bg-white rounded-lg flex gap-7.5 max-[1025px]:gap-5 max-sm:gap-6 w-[44%] max-sm:w-full relative max-sm:order-2 max-sm:p-10 max-sm:flex-col-reverse ${
-                    index % 2 === 0 ? "" : "flex-row-reverse"
-                  } ${
-                    index % 2 === 0
-                      ? "after:content-[''] after:block after:w-0 after:h-0 after:border-solid after:border-y-[11.5px] after:border-l-12 after:border-y-transparent after:border-l-white after:absolute after:-right-2 max-sm:after:hidden"
-                      : "after:content-[''] after:block after:w-0 after:h-0 after:border-solid after:border-y-[11.5px] after:border-r-12 after:border-y-transparent after:border-r-white after:absolute after:-left-2 max-sm:after:hidden"
-                  }`}
-                >
-                  <p
-                    className={`${
-                      index % 2 === 0 ? "text-left" : ""
-                    } text-gray text-lg max-sm:text-sm max-sm:text-center max-sm:leading-normal`}
-                  >
-                    {item.description}
-                  </p>
-
-                  <img
-                    className="max-sm:w-17.5 max-[1025px]:w-16"
-                    src={item.iconPath}
-                    alt={`${item.year} Icon`}
-                  />
-                </div>
-                <div className="flex justify-center absolute left-1/2 -translate-x-1/2 border-[0.438rem] border-secondary rounded-full bg-white w-12 h-12 max-sm:top-42 max-sm:z-2">
-                  <div
-                    className="w-3 h-3 rounded-full transition-all duration-500"
-                    style={{
-                      backgroundColor:
-                        scrollPercent > (index / timelineData.length) * 100 - 5
-                          ? item.color
-                          : "#DDCCFF",
-                    }}
-                  />
-                </div>
-
-                <p className="text-lg text-gray py-2 px-6 rounded-lg bg-white font-semibold max-sm:order-1 max-sm:text-[1rem]">
-                  {item.title}
-                </p>
+                <img
+                  className="max-sm:w-17.5 max-[1025px]:w-16"
+                  src={item.iconPath}
+                  alt={`${item.year} icon`}
+                />
               </div>
-            );
-          }
+
+              {/* Dot */}
+              <div className="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full border-[0.438rem] border-secondary bg-white flex items-center justify-center">
+                <div
+                  className="w-3 h-3 rounded-full transition-all duration-500"
+                  style={{
+                    backgroundColor:
+                      scrollPercent > (index / timelineData.length) * 100 - 5
+                        ? item.color
+                        : "#DDCCFF",
+                  }}
+                />
+              </div>
+
+              {/* Title */}
+              <p className="text-lg text-gray py-2 px-6 rounded-lg bg-white font-semibold max-sm:text-center">
+                {item.title}
+              </p>
+            </div>
+          );
         })}
       </div>
     </section>
